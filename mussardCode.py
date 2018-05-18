@@ -111,50 +111,6 @@ def make_tensors(domain,pttype='NEVPT',df=False):
 
 
 # --------------------------------------------------------------
-# Simplify the result
-def simplify_all(result,deltas,cumulantE4=False,cumulantE3=False):
-  for t in result:
-      t.contractDeltaFuncs_new()
-  sqa.removeVirtOps_sf(result)
-  sqa.termChop(result)
-  sqa.combineTerms(result)
-  extendedR=[]
-  for t in result:
-      extendedR += sqa.contractCoreOps_sf(t)
-  for t in extendedR:
-      t.contractDeltaFuncs_new()
-  sqa.termChop(extendedR)
-  sqa.combineTerms(extendedR)
-  result = []
-  for r in extendedR:
-      item1=geraldCode.replaceRepeatIndicesWithDeltas(r, deltas)
-      item2=geraldCode.replaceSingleKdeltaWithDeltas(item1, deltas)
-      result.append(geraldCode.replaceAllKdeltaWithDeltas(item2, deltas))
-  if (cumulantE4):
-    x1 = sqa.index('Ax1',  [sqa.options.active_type],  True)
-    x2 = sqa.index('Ax2',  [sqa.options.active_type],  True)
-    x3 = sqa.index('Ax3',  [sqa.options.active_type],  True)
-    x4 = sqa.index('Ax4',  [sqa.options.active_type],  True)
-    x5 = sqa.index('Ax5',  [sqa.options.active_type],  True)
-    x6 = sqa.index('Ax6',  [sqa.options.active_type],  True)
-    sqa.decomp_4rdms_to_3rdms_sf(result, 'E4',
-                                         sqa.sfExOp([x1,x2]),
-                                         sqa.sfExOp([x1,x2,x3,x4]),
-                                         sqa.sfExOp([x1,x2,x3,x4]),
-                                         sqa.sfExOp([x1,x2,x3,x4]),
-                                         sqa.sfExOp([x1,x2,x3,x4,x5,x6]))
-  if (cumulantE3):
-    x1 = sqa.index('Ax1',  [sqa.options.active_type],  True)
-    x2 = sqa.index('Ax2',  [sqa.options.active_type],  True)
-    x3 = sqa.index('Ax3',  [sqa.options.active_type],  True)
-    x4 = sqa.index('Ax4',  [sqa.options.active_type],  True)
-    sqa.decomp_3rdms_to_2rdms_sf(result, 'E3',
-                                         sqa.sfExOp([x1,x2]),
-                                         sqa.sfExOp([x1,x2,x3,x4]))
-  return result
-
-
-# --------------------------------------------------------------
 # Prepare a list of the actually useful tensors
 def write_tensors_and_equations(Class,result,tensors,commentE3=False,df=False):
   if 'AAA' in Class or '3' in Class:

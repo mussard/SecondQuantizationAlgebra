@@ -98,10 +98,10 @@ def extendedNormalOrder(inTerm, scale=1.0):
   # raise an error
   if has_creDesOps and has_sfExOps:
     raise RuntimeError, "Normal ordering not implemented when both creOp/desOp and sfExOp " + \
-                      # "tensors are present"
+                        "tensors are present"
   if has_creDesOps:
     raise RuntimeError, "Normal ordering not implemented when creOp/desOp " + \
-                      # "tensors are present"
+                        "tensors are present"
 
 
 
