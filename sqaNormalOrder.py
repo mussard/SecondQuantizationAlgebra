@@ -17,7 +17,7 @@
 
 
 from sqaTensor import tensor, kroneckerDelta, creOp, desOp, sfExOp
-from sqaTerm import term, sortOps
+from sqaTerm import term, sortOps, multiplyTerms
 from sqaIndex import index
 from sqaMisc import makeTuples, allDifferent, makePermutations, get_num_perms
 from sqaOptions import options
@@ -25,6 +25,120 @@ from sqaOptions import options
 
 #--------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------
+def pairsAreEqual(p1, p2):
+    if (len (p1) != len(p2)) :
+        return False
+    if (len(p1) == len( list( set(p1) & set(p2))) ):
+        return True
+    else:
+        return False
+
+def getParity(perm0, perm1):
+    """Check if 2 permutations are of equal parity.
+
+    Assume that both permutation lists are of equal length
+    and have the same elements. No need to check for these
+    conditions.
+    """
+    factor = 2. # if perm0 and perm1 have no common spots
+    uniquePairs = set([])
+    allSymmetryAllowedPairs = set([])
+    for p in perm0:
+        uniquePairs.add(frozenset([p,p]))
+        allSymmetryAllowedPairs.add(frozenset([p,p]))
+
+    for i in range(len(perm0)):
+      if (perm0[i] != perm1[i]):
+          pair = frozenset([perm0[i], perm1[i]])  #form the pair
+
+          tempSet = allSymmetryAllowedPairs.copy()
+          if pair not in tempSet:
+              for oldpair in tempSet:
+                  allSymmetryAllowedPairs.add(pair.symmetric_difference(oldpair))
+              uniquePairs.add(pair)
+              allSymmetryAllowedPairs.add(pair)
+
+    factor = 2**(2.*len(perm0) - len(uniquePairs))
+
+    perm0 = list(perm0) ## copy this into a list so we don't mutate the original
+    perm1 = list(perm1) ## copy this into a list so we don't mutate the original
+    transCount = 0
+    for loc in range(len(perm0) - 1):                         # Do (len - 1) transpositions
+        p0 = perm0[loc]
+        p1 = perm1[loc]
+        if p0 != p1:
+            sloc = perm1[loc:].index(p0)+loc          # Find position in perm1
+            perm1[loc], perm1[sloc] = p0, p1          # Swap in perm1
+            transCount += 1
+
+    # Even number of transpositions means equal parity
+    if (transCount % 2) == 0:
+        return 1, factor
+    else:
+        return -1, factor
+
+#if all the indices are core indices then make delta functions
+def extendedNormalOrder(inTerm, scale=1.0):
+  "Returns a list of terms resulting from extended normal ordering the operators in inTerm."
+
+  # check that inTerm is a term
+  if not isinstance(inTerm, term):
+    raise TypeError, "inTerm must be of class term"
+
+  # determine what types of operators the term contains
+  has_creDesOps = False
+  has_sfExOps = False
+  for t in inTerm.tensors:
+    if isinstance(t, creOp) or isinstance(t, desOp):
+      has_creDesOps = True
+    elif isinstance(t, sfExOp):
+      has_sfExOps = True
+
+  # If term has both creation/destruction operators and spin free excitation operators,
+  # raise an error
+  if has_creDesOps and has_sfExOps:
+    raise RuntimeError, "Normal ordering not implemented when both creOp/desOp and sfExOp " + \
+                      # "tensors are present"
+  if has_creDesOps:
+    raise RuntimeError, "Normal ordering not implemented when creOp/desOp " + \
+                      # "tensors are present"
+
+
+
+  # Extended Normal ordering for sfExOps
+  elif has_sfExOps:
+
+    # Make separate lists of the spin free excitation operators and other tensors
+    sfExOp_list = []
+    other_list = []
+    for t in inTerm.tensors:
+      if isinstance(t, sfExOp):
+        sfExOp_list.append(t.copy())
+      else:
+        other_list.append(t.copy())
+
+    # Initialize n, the number of remaining spin free excitation operators
+    n = len(sfExOp_list)
+
+    if n > 1:
+      raise RuntimeError, "One one term can be processed at a time"
+
+    order = inTerm.tensors[0].order
+    upperList = inTerm.tensors[0].indices[:order]
+    lowerList = inTerm.tensors[0].indices[order:]
+
+    import itertools
+    lowerIteration = list(itertools.permutations(lowerList,order))
+    deltas = len(lowerIteration)*[]
+    for index in range(len(lowerIteration)):
+      parity, factor = getParity(lowerList, lowerIteration[index])
+      currentTerm = term(parity*factor*scale, [""], [ kroneckerDelta([upperList[0], lowerIteration[index][0]])] )
+      for i in range(1,order):
+        newTerm = multiplyTerms(currentTerm, term(1.0, [""], [kroneckerDelta([upperList[i], lowerIteration[index][i]])] ))
+        currentTerm = newTerm
+      deltas.append(currentTerm)
+    return deltas
+
 
 
 def normalOrder(inTerm):
@@ -178,16 +292,16 @@ def normalOrder(inTerm):
         # Give short names for the last two excitation operators and their orders
         e1 = t.tensors[-2]
         e2 = t.tensors[-1]
-        o1 = e1.order
-        o2 = e2.order
+        o1 = int(e1.order)
+        o2 = int(e2.order)
 
         # Loop over the number of contractions
         for nc in range(min(o1,o2)+1):
-          
+
           # Compute the order of excitation operator for the current number of contractions
           newOrder = o1 + o2 - nc
 
-          # Compute all nc-tuples of index numbers from e1 and e2, as well as all permutations of 
+          # Compute all nc-tuples of index numbers from e1 and e2, as well as all permutations of
           # the order in which the tuples may be combined to form a contraction
           perms = [0]
           if nc > 0:
@@ -250,7 +364,7 @@ def normalOrder(inTerm):
 
       # Decrement the counter for the number of excitation operators
       n -= 1; #print "MADE OK!!!"
-      
+
     # Set the return value as the final iteration's output terms
     outTerms = iter_output_terms
 
@@ -361,7 +475,7 @@ def contractCoreOps_sf(inTerm):
             prefactor *= 2
             break
 #
-        
+
     # Initialize the term's tensor list
     tensorList = other_list[:]
 

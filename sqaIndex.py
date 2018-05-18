@@ -32,7 +32,7 @@
 #
 # The list of types is actually a list of lists of strings.
 # Each list of strings represents a type group.
-# Examples of type groups are the index's spin type or whether the index is 
+# Examples of type groups are the index's spin type or whether the index is
 # core, active, virtual, etc.
 # The reason for this format is to evaluate Kronecker delta functions, which will
 # evaluate to zero if there is no overlap in any of the two indices' type groups.

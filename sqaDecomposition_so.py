@@ -94,7 +94,7 @@ def decomp_3rdms_to_2rdms_so(inTerms, d3name, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2
       del(inTerms[i])
 
   if options.verbose:
-    print 'decomposed %i 3-body RDMs' %(opCount)
+    print('decomposed %i 3-body RDMs' %(opCount))
 
 
 #--------------------------------------------------------------------------------------------------
@@ -165,7 +165,7 @@ def decomp_4rdms_to_2rdms_so(inTerms, d4name, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2
       del(inTerms[i])
 
   if options.verbose:
-    print 'decomposed %i 4-body RDMs' %(opCount)
+    print('decomposed %i 4-body RDMs' %(opCount))
 
 
 #--------------------------------------------------------------------------------------------------
@@ -244,7 +244,7 @@ def decomp_4rdms_to_3rdms_so(inTerms, d4name, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2
       del(inTerms[i])
 
   if options.verbose:
-    print 'decomposed %i 4-body RDMs' %(opCount)
+    print('decomposed %i 4-body RDMs' %(opCount))
 
 
 #--------------------------------------------------------------------------------------------------
@@ -282,7 +282,7 @@ def decomp_3rdm_to_2rdm_so(d3, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab):
     raise TypeError, "d2_abab must be a tensor with 4 indices"
 
   # Create dummy tensors for unknown-spin 1 and 2 rdms
-  taken_names = [d3.name, d1_aa.name, d1_bb.name, d2_aaaa.name, d2_bbbb.name, d2_abab.name] 
+  taken_names = [d3.name, d1_aa.name, d1_bb.name, d2_aaaa.name, d2_bbbb.name, d2_abab.name]
   dummy_name = 'rdm_dummy'
   while dummy_name in taken_names:
     dummy_name += '_'
@@ -346,7 +346,7 @@ def decomp_3rdm_to_2rdm_so(d3, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab):
   # Compute terms from the sum involving only one particle density matrices
   ti = range(3)
   for bi in makePermutations(3):
-    
+
     # Determine the number of permutations
     n_perm = get_num_perms(ti,bi)
 
@@ -419,7 +419,7 @@ def decomp_4rdm_to_2rdm_so(d4, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab):
     raise TypeError, "d2_abab must be a tensor with 4 indices"
 
   # Create dummy tensors for unknown-spin 1 and 2 rdms
-  taken_names = [d4.name, d1_aa.name, d1_bb.name, d2_aaaa.name, d2_bbbb.name, d2_abab.name] 
+  taken_names = [d4.name, d1_aa.name, d1_bb.name, d2_aaaa.name, d2_bbbb.name, d2_abab.name]
   dummy_name = 'rdm_dummy'
   while dummy_name in taken_names:
     dummy_name += '_'
@@ -450,7 +450,7 @@ def decomp_4rdm_to_2rdm_so(d4, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab):
           if temp[0] == ti[3] or temp[1] == ti[2]:
             temp = [temp[1], temp[0]]
           bi += temp
-          
+
           # Determine the number of index permutations
           n_perm = get_num_perms(ti,bi)
 
@@ -598,7 +598,7 @@ def decomp_4rdm_to_2rdm_so(d4, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab):
   # Compute terms from the sum involving only one particle density matrices
   ti = range(4)
   for bi in makePermutations(4):
-    
+
     # Determine the number of permutations
     n_perm = get_num_perms(ti,bi)
 
@@ -682,7 +682,7 @@ def decomp_4rdm_to_3rdm_so(d4, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab, d3_aaaaa
 
   # Create dummy tensors for unknown-spin rdms
   taken_names = [d4.name, d1_aa.name, d1_bb.name, d2_aaaa.name, d2_bbbb.name, d2_abab.name, \
-                 d3_aaaaaa.name, d3_bbbbbb.name, d3_baabaa.name, d3_abbabb.name] 
+                 d3_aaaaaa.name, d3_bbbbbb.name, d3_baabaa.name, d3_abbabb.name]
   dummy_name = 'rdm_dummy'
   while dummy_name in taken_names:
     dummy_name += '_'
@@ -732,7 +732,7 @@ def decomp_4rdm_to_3rdm_so(d4, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab, d3_aaaaa
       for t in d3_decomp:
         coeff = (-1) * sign * t.numConstant
         decomp.append(term(coeff, [], [d1_copy_0] + t.tensors))
-      
+
   # Compute terms from the sum involving two 2-body cumulants
   for p in range(1):
     for q in range(p+1,4):
@@ -752,7 +752,7 @@ def decomp_4rdm_to_3rdm_so(d4, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab, d3_aaaaa
           if temp[0] == ti[3] or temp[1] == ti[2]:
             temp = [temp[1], temp[0]]
           bi += temp
-          
+
           # Determine the number of index permutations
           n_perm = get_num_perms(ti,bi)
 
@@ -1019,7 +1019,7 @@ def decomp_3ops_to_2ops_2rdms_so(inTerms, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_aba
       del(inTerms[i])
 
   if options.verbose:
-    print 'decomposed %i 3-body operators' %(opCount)
+    print('decomposed %i 3-body operators' %(opCount))
 
 
 #--------------------------------------------------------------------------------------------------
@@ -1107,7 +1107,7 @@ def decomp_4ops_to_2ops_2rdms_so(inTerms, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_aba
       del(inTerms[i])
 
   if options.verbose:
-    print 'decomposed %i 4-body operators' %(opCount)
+    print('decomposed %i 4-body operators' %(opCount))
 
 
 #--------------------------------------------------------------------------------------------------
@@ -1201,7 +1201,7 @@ def decomp_3ops_to_2ops_3rdms_so(inTerms, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_aba
       del(inTerms[i])
 
   if options.verbose:
-    print 'decomposed %i 3-body operators' %(opCount)
+    print('decomposed %i 3-body operators' %(opCount))
 
 
 #--------------------------------------------------------------------------------------------------
@@ -1297,7 +1297,7 @@ def decomp_4ops_to_2ops_3rdms_so(inTerms, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_aba
       del(inTerms[i])
 
   if options.verbose:
-    print 'decomposed %i 4-body operators' %(opCount)
+    print('decomposed %i 4-body operators' %(opCount))
 
 
 #--------------------------------------------------------------------------------------------------
@@ -1330,7 +1330,7 @@ def decomp_3op_to_2op_2rdm_so(op, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab):
     raise TypeError, "d2_abab must be a tensor with 4 indices"
 
   # Create dummy tensors for unknown-spin 1 and 2 rdms
-  taken_names = [d1_aa.name, d1_bb.name, d2_aaaa.name, d2_bbbb.name, d2_abab.name] 
+  taken_names = [d1_aa.name, d1_bb.name, d2_aaaa.name, d2_bbbb.name, d2_abab.name]
   dummy_name = 'rdm_dummy'
   while dummy_name in taken_names:
     dummy_name += '_'
@@ -1518,7 +1518,7 @@ def decomp_4op_to_2op_2rdm_so(op, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab):
     raise TypeError, "d2_abab must be a tensor with 4 indices"
 
   # Create dummy tensors for unknown-spin 1 and 2 rdms
-  taken_names = [d1_aa.name, d1_bb.name, d2_aaaa.name, d2_bbbb.name, d2_abab.name] 
+  taken_names = [d1_aa.name, d1_bb.name, d2_aaaa.name, d2_bbbb.name, d2_abab.name]
   dummy_name = 'rdm_dummy'
   while dummy_name in taken_names:
     dummy_name += '_'
@@ -1557,7 +1557,7 @@ def decomp_4op_to_2op_2rdm_so(op, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab):
           if temp[0] == ti[3] or temp[1] == ti[2]:
             temp = [temp[1], temp[0]]
           bi += temp
-          
+
           # Determine the number of index permutations
           n_perm = get_num_perms(ti,bi)
 
@@ -1743,7 +1743,7 @@ def decomp_3op_to_2op_3rdm_so(op, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab, d3_aa
     raise TypeError, "d3_abbabb must be a tensor with 6 indices"
 
   # Create dummy tensors for unknown-spin 1 and 2 rdms
-  taken_names = [d1_aa.name, d1_bb.name, d2_aaaa.name, d2_bbbb.name, d2_abab.name] 
+  taken_names = [d1_aa.name, d1_bb.name, d2_aaaa.name, d2_bbbb.name, d2_abab.name]
   dummy_name = 'rdm_dummy'
   while dummy_name in taken_names:
     dummy_name += '_'
@@ -1934,7 +1934,7 @@ def decomp_4op_to_2op_3rdm_so(op, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab, d3_aa
     raise TypeError, "d3_abbabb must be a tensor with 6 indices"
 
   # Create dummy tensors for unknown-spin 1 and 2 rdms
-  taken_names = [d1_aa.name, d1_bb.name, d2_aaaa.name, d2_bbbb.name, d2_abab.name] 
+  taken_names = [d1_aa.name, d1_bb.name, d2_aaaa.name, d2_bbbb.name, d2_abab.name]
   dummy_name = 'rdm_dummy'
   while dummy_name in taken_names:
     dummy_name += '_'
@@ -1973,7 +1973,7 @@ def decomp_4op_to_2op_3rdm_so(op, d1_aa, d1_bb, d2_aaaa, d2_bbbb, d2_abab, d3_aa
           if temp[0] == ti[3] or temp[1] == ti[2]:
             temp = [temp[1], temp[0]]
           bi += temp
-          
+
           # Determine the number of index permutations
           n_perm = get_num_perms(ti,bi)
 

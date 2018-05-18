@@ -43,13 +43,13 @@ def combine_transpose(termList):
   for t in termList:
     if not t.isInCanonicalForm:
       if options.verbose:
-        print "making canonical...  %s" %(str(t))
+        print("making canonical...  %s" %(str(t)))
       t.makeCanonical()
 
-  # if requested, print a greeting
+  # if requested, print(a greeting)
   if options.verbose:
-    print ""
-    print "Checking for transpose equivalencies and combining..."
+    print("")
+    print("Checking for transpose equivalencies and combining...")
 
   # initialize counter variable
   count = 0
@@ -58,9 +58,9 @@ def combine_transpose(termList):
   j = 0
   while j < len(termList):
 
-    # if requested, print each term
+    # if requested, print(each term)
     if options.verbose:
-      print '%i %s' %(count, str(termList[j]))
+      print('%i %s' %(count, str(termList[j])))
 
     # increment the counter
     count += 1
@@ -94,10 +94,10 @@ def combine_transpose(termList):
     else:
       j += 1
 
-  # if requested, print the elapsed time
+  # if requested, print(the elapsed time)
   if options.verbose:
-    print 'Transpose combination complete in %.3f seconds' %(time.time() - startTime)
-    print ''
+    print('Transpose combination complete in %.3f seconds' %(time.time() - startTime))
+    print('')
 
 
 #--------------------------------------------------------------------------------------------------
@@ -158,7 +158,7 @@ def convert_ops_to_rdms_so(inTerms, name, ord = 0):
       # Increment the index
       else:
         i += 1
-    
+
     # Check that the number of cre/des ops are the same
     if creCount != desCount:
       raise ValueError, "Cannot convert spin orbital operators in '%s' to density matrix, unequal number of cre/des operators" %(str(t))
@@ -230,7 +230,7 @@ def assign_rdm_types(inTerms, rdm_name, rdms):
     (rdm_bottomACounts[i], rdm_bottomBCounts[i]) = getABCounts(rdms[i].indices[order:])
 
 #  for i in range(len(rdms)):
-#    print "rdm: %20s   counts: %2i %2i %2i %2i" %(str(rdms[i]), rdm_topACounts[i], rdm_topBCounts[i], rdm_bottomACounts[i], rdm_bottomBCounts[i])
+#    print("rdm: %20s   counts: %2i %2i %2i %2i" %(str(rdms[i]), rdm_topACounts[i], rdm_topBCounts[i], rdm_bottomACounts[i], rdm_bottomBCounts[i]))
 
   # For each input term, loop through the tensors to assign rdm types
   for t in inTerms:
@@ -299,12 +299,12 @@ def assign_rdm_types(inTerms, rdm_name, rdms):
               break
             k -= 1
           if k == j:
-#            print "rdm = '%s'" %(str(matching_rdm))
-#            print "ten = '%s'" %(str(ten))
-#            print "tensor indices:"
+#            print("rdm = '%s'" %(str(matching_rdm)))
+#            print("ten = '%s'" %(str(ten)))
+#            print("tensor indices:")
 #            for ind in indexList:
-#              print ind.name, ", ", ind.indType
-#            print "counts: %2i %2i %2i %2i" %(topACount, topBCount, bottomACount, bottomBCount)
+#              print(ind.name, ", ", ind.indType)
+#            print("counts: %2i %2i %2i %2i" %(topACount, topBCount, bottomACount, bottomBCount))
             raise RuntimeError, "Could not sort the top indices of '%s' to match the rdm's alpha/beta ordering." %(str(ten))
 
       # Sort the bottom indices to match the rdm's alpha/beta order

@@ -41,8 +41,8 @@ from sqaSymmetry import symmetry
 #  - sfExOp is a 2n-index tensor representing a spin-free excitation operator.
 #  - kroneckerDelta is a two-index tensor representing the Kronecker delta function.
 
-# Modified by M. Saitow May 16, 2012, hasExt is added in kroneckerDelta and tensor 
-# Modified by M. Saitow May 16, 2012, purelyExt is added in kroneckerDelta 
+# Modified by M. Saitow May 16, 2012, hasExt is added in kroneckerDelta and tensor
+# Modified by M. Saitow May 16, 2012, purelyExt is added in kroneckerDelta
 
 #--------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------
@@ -118,12 +118,12 @@ class tensor:
   #------------------------------------------------------------------------------------------------
 
   def __str__(self):
-    retval = self.name + "("
+    retval = self.name + "["
     for i in range(len(self.indices)):
       retval += self.indices[i].name #+ " " + str(self.indices[i].type)
       if i < len(self.indices)-1:
         retval += ","
-    retval += ")"
+    retval += "]"
     return retval
 
   #------------------------------------------------------------------------------------------------
@@ -144,7 +144,7 @@ class tensor:
 #    # If the result is already known, return it
 #    if not force and self.permutations != None and self.factors != None:
 #      return (self.permutations,self.factors)
-    
+
     # Otherwise, compute the permutations and corresponding factors
     tuples = [range(len(self.indices))]
     factors = [1]
@@ -376,12 +376,12 @@ class sfExOp(tensor):
 
     # Initialize symmetries
     self.symmetries = []
-    for i in range(self.order-1):
+    for i in range(int(self.order-1)):
       if i == 0:
         temp_tup = (1,)
       else:
         temp_tup = (0,)
-      for j in range(1,2*self.order):
+      for j in range(1,int(2*self.order)):
         if j == i:
           temp_tup = temp_tup + (i+1,)
         elif j == i+1:
@@ -393,7 +393,7 @@ class sfExOp(tensor):
         else:
           temp_tup = temp_tup + (j,)
       self.symmetries.append(symmetry(temp_tup, 1))
-          
+
 
   #------------------------------------------------------------------------------------------------
 
@@ -451,7 +451,7 @@ class creDesTensor(tensor):
   #------------------------------------------------------------------------------------------------
 
   def __init__(self, ops):
-    
+
     TypeErrorMessage = "ops must be a normal ordered list of creOp and desOp objects"
     if not type(ops) == type([]):
       raise TypeError, TypeErrorMessage
@@ -492,7 +492,7 @@ class creDesTensor(tensor):
         else:
           temp_tup = temp_tup + (j,)
       self.symmetries.append(symmetry(temp_tup, -1))
-          
+
   #------------------------------------------------------------------------------------------------
 
   def __cmp__(self,other):

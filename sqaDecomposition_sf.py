@@ -318,7 +318,7 @@ def decomp_3rdm_to_2rdm_sf(d3, d1, d2, indexOrder = '1212'):
   # Compute terms from the sum involving only one particle density matrices
   ti = range(3)
   for bi in makePermutations(3):
-    
+
     # Determine the number of permutations
     n_perm = get_num_perms(ti,bi)
 
@@ -412,7 +412,7 @@ def decomp_4rdm_to_2rdm_sf(d4, d1, d2, d2_hom, d2_het):
           if temp[0] == ti[3] or temp[1] == ti[2]:
             temp = [temp[1], temp[0]]
           bi += temp
-          
+
           # Determine the number of index permutations
           n_perm = get_num_perms(ti,bi)
 
@@ -429,16 +429,21 @@ def decomp_4rdm_to_2rdm_sf(d4, d1, d2, d2_hom, d2_het):
             d2_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + bj[2:4])]
             decomp.append(term(coeff, [], [d2_copy_0, d2_copy_1]))
           elif n_perm == 2:
-            coeff = sign * 0.5
+            coeff = sign * 1.0/3.0
             d2_hom_copy_0 = d2_hom.copy()
-            d2_hom_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + bj[0:2])]
+            d2_hom_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[0], bj[1]])]
             d2_hom_copy_1 = d2_hom.copy()
-            d2_hom_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + bj[2:4])]
-            decomp.append(term(coeff, [], [d2_hom_copy_0, d2_hom_copy_1]))
+            d2_hom_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + [bj[3], bj[2]])]
+            decomp.append(term(coeff/2.0, [], [d2_hom_copy_0, d2_hom_copy_1]))
+            d2_hom_copy_0 = d2_hom.copy()
+            d2_hom_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[1], bj[0]])]
+            d2_hom_copy_1 = d2_hom.copy()
+            d2_hom_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + [bj[2], bj[3]])]
+            decomp.append(term(coeff/2.0, [], [d2_hom_copy_0, d2_hom_copy_1]))
             d2_het_copy_0 = d2_het.copy()
-            d2_het_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + bj[0:2])]
+            d2_het_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[0], bj[1]])]
             d2_het_copy_1 = d2_het.copy()
-            d2_het_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + bj[2:4])]
+            d2_het_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + [bj[2], bj[3]])]
             decomp.append(term(coeff, [], [d2_het_copy_0, d2_het_copy_1]))
             d2_het_copy_0 = d2_het.copy()
             d2_het_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[1], bj[0]])]
@@ -449,7 +454,7 @@ def decomp_4rdm_to_2rdm_sf(d4, d1, d2, d2_hom, d2_het):
             raise RuntimeError, "Did not expect a term with %i permutations" %n_perm
 
           # Create 'un-permuted' 2RDM 1RDM 1RDM terms
-          coeff = sign * (-1) * (0.5)**n_perm 
+          coeff = sign * (-1) * (0.5)**n_perm
           d2_copy_0 = d2.copy()
           d2_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + bj[0:2])]
           d1_copy_0 = d1.copy()
@@ -625,7 +630,7 @@ def decomp_4rdm_to_2rdm_sf(d4, d1, d2, d2_hom, d2_het):
   # Compute terms from the sum involving only one particle density matrices
   ti = range(4)
   for bi in makePermutations(4):
-    
+
     # Determine the number of permutations
     n_perm = get_num_perms(ti,bi)
 
@@ -732,7 +737,7 @@ def decomp_4rdm_to_3rdm_sf(d4, d1, d2, d2_hom, d2_het, d3):
       for t in d3_decomp:
         coeff = (-1) * sign * (0.5)**n_perm * t.numConstant
         decomp.append(term(coeff, [], [d1_copy_0] + t.tensors))
-      
+
   # Compute terms from the sum involving two 2-body cumulants
   for p in range(1):
     for q in range(p+1,4):
@@ -752,7 +757,7 @@ def decomp_4rdm_to_3rdm_sf(d4, d1, d2, d2_hom, d2_het, d3):
           if temp[0] == ti[3] or temp[1] == ti[2]:
             temp = [temp[1], temp[0]]
           bi += temp
-          
+
           # Determine the number of index permutations
           n_perm = get_num_perms(ti,bi)
 
@@ -769,16 +774,21 @@ def decomp_4rdm_to_3rdm_sf(d4, d1, d2, d2_hom, d2_het, d3):
             d2_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + bj[2:4])]
             decomp.append(term(coeff, [], [d2_copy_0, d2_copy_1]))
           elif n_perm == 2:
-            coeff = sign * 0.5
+            coeff = sign * 1.0/3.0
             d2_hom_copy_0 = d2_hom.copy()
-            d2_hom_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + bj[0:2])]
+            d2_hom_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[0], bj[1]])]
             d2_hom_copy_1 = d2_hom.copy()
-            d2_hom_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + bj[2:4])]
-            decomp.append(term(coeff, [], [d2_hom_copy_0, d2_hom_copy_1]))
+            d2_hom_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + [bj[3], bj[2]])]
+            decomp.append(term(coeff/2.0, [], [d2_hom_copy_0, d2_hom_copy_1]))
+            d2_hom_copy_0 = d2_hom.copy()
+            d2_hom_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[1], bj[0]])]
+            d2_hom_copy_1 = d2_hom.copy()
+            d2_hom_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + [bj[2], bj[3]])]
+            decomp.append(term(coeff/2.0, [], [d2_hom_copy_0, d2_hom_copy_1]))
             d2_het_copy_0 = d2_het.copy()
-            d2_het_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + bj[0:2])]
+            d2_het_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[0], bj[1]])]
             d2_het_copy_1 = d2_het.copy()
-            d2_het_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + bj[2:4])]
+            d2_het_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + [bj[2], bj[3]])]
             decomp.append(term(coeff, [], [d2_het_copy_0, d2_het_copy_1]))
             d2_het_copy_0 = d2_het.copy()
             d2_het_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[1], bj[0]])]
@@ -789,7 +799,7 @@ def decomp_4rdm_to_3rdm_sf(d4, d1, d2, d2_hom, d2_het, d3):
             raise RuntimeError, "Did not expect a term with %i permutations" %n_perm
 
           # Create 'un-permuted' 2RDM 1RDM 1RDM terms
-          coeff = sign * (-1) * (0.5)**n_perm 
+          coeff = sign * (-1) * (0.5)**n_perm
           d2_copy_0 = d2.copy()
           d2_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + bj[0:2])]
           d1_copy_0 = d1.copy()

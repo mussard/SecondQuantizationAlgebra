@@ -132,7 +132,7 @@ class term:
     # tensors
     for t in self.tensors:
       retval += str(t) + " "
-    
+
     return retval
 
   #------------------------------------------------------------------------------------------------
@@ -210,22 +210,22 @@ class term:
     while i < len(self.tensors):
       t = self.tensors[i]
 
-#      print t
-#      print "****************************"
+#      print(t)
+#      print("****************************")
 #      if isinstance(t, kroneckerDelta):
 #        i0 = t.indices[0]
 #        i1 = t.indices[1]
-#        print i0.indType
-#        print i1.indType
-      
+#        print(i0.indType)
+#        print(i1.indType)
+
       # If the term is a delta funciton with a repeated index, remove it
       if isinstance(t, kroneckerDelta) and (t.indices[0] == t.indices[1]):
-#        print "2 ****************************"
+#        print("2 ****************************")
         del(self.tensors[i])
 
       # If the term is a delta funciton with contractable indices, contract them and remove the delta func
       elif isinstance(t, kroneckerDelta) and (t.indices[0].isSummed or t.indices[1].isSummed):
-#        print "3 ****************************"
+#        print("3 ****************************")
         i0 = t.indices[0]
         i1 = t.indices[1]
 
@@ -379,7 +379,7 @@ class term:
   def isNormalOrdered(self):
     "Returns true if the term is in normal order and false otherwise"
 
-    creFlag  = False 
+    creFlag  = False
     desFlag  = False
     sfExFlag = False
     for t in self.tensors:
@@ -406,8 +406,8 @@ class term:
     if self.isInCanonicalForm:
       return
 
-#    print "Converting to canonical form:"
-#    print self
+#    print("Converting to canonical form:")
+#    print(self)
 
     # If the term is not normal ordered, raise an error
     if not self.isNormalOrdered():
@@ -766,10 +766,10 @@ class term:
 #    # Check to see that only one candidate achieved the top score
 #    if nTopScore > 1:
 #      #raise RuntimeError, "%i candidates tied for the top score." %nTopScore
-#      print "WARNING: %i candidates tied for the top score." %nTopScore
+#      print("WARNING: %i candidates tied for the top score." %nTopScore)
 
     # Set the tensor list as the list with the 'best' index naming and ordering
-    self.tensors = best_tensor_list 
+    self.tensors = best_tensor_list
 
     # Apply the factor produced from the canonical ordering
     self.scale(best_factor)
@@ -878,9 +878,9 @@ def combineTerms(termList, maxThreads = 1):
   "Combines any like terms in termList"
 
   if options.verbose:
-    print ''
-    print 'Combining like terms:'
-    print 'Converting %i terms to canonical form...' %(len(termList))
+    print('')
+    print('Combining like terms:')
+    print('Converting %i terms to canonical form...' %(len(termList)))
 
   startTime = time.time()
 
@@ -910,7 +910,7 @@ def combineTerms(termList, maxThreads = 1):
         termList[i].makeCanonical()
 
 #        pLock.acquire()
-#        print '%6i  %s' %(printCount[0],str(termList[i]))
+#        print('%6i  %s' %(printCount[0],str(termList[i])))
 #        printCount[0] += 1
 #        pLock.release()
 
@@ -939,7 +939,7 @@ def combineTerms(termList, maxThreads = 1):
     # Convert the terms to canonical form in the main thread
     for i in range(len(termList)):
       if options.verbose:
-        print '%6i  %s' %(i,str(termList[i]))
+        print('%6i  %s' %(i,str(termList[i])))
       termList[i].makeCanonical()
 
   # Sort the terms
@@ -968,8 +968,8 @@ def combineTerms(termList, maxThreads = 1):
   termChop(termList)
 
   if options.verbose:
-    print "Finished combining terms in %.3f seconds" %(time.time() - startTime)
-    print ""
+    print("Finished combining terms in %.3f seconds" %(time.time() - startTime))
+    print("")
 
 #  # Sort the terms
 #  termList.sort()
@@ -1116,7 +1116,7 @@ def getcim(tenList, alphabet, tenCount = 0, alphaCount = 0, inputMaps = {}):
     # Add the sfExOp's indices to the ordered index list
     for i in t.indices:
       indexList.append(i)
-        
+
 
   if no_tensors_left or only_creDes_left or only_sfExOp_left:
 
@@ -1276,7 +1276,7 @@ def removeCoreOpPairs(inList):
         if not repeatedCreOp:
 
           # otherwise...
-          
+
           # create the matching destruction operator
           matchingDesOp = desOp(t.tensors[i].indices[0])
 
@@ -1347,8 +1347,8 @@ def removeCoreOps_sf(inList):
   """
 
   if options.verbose:
-    print "removing core creation and destruction operators in preperation for conversion to RDMs by an expectation value..."
-    print ""
+    print("removing core creation and destruction operators in preperation for conversion to RDMs by an expectation value...")
+    print("")
 
   # loop repeatedly through the terms until no core indices are left
   hasCore = True
@@ -1431,13 +1431,13 @@ def removeCoreOps_sf(inList):
       # organize the operator's indices into vertical pairs of cre/des operator indices
       pairs = [ [op.indices[i],op.indices[order+i]] for i in xrange(order)]
 
-      # print out the initial term
+      # print(out the initial term)
       if options.verbose:
-        print "  initial term: ", t
-#        print "verticle pairs: ",
+        print("  initial term: ", t)
+#        print("verticle pairs: ",)
 #        for p in pairs:
-#          print " [%s,%s]" %(p[0].name, p[1].name),
-#        print ""
+#          print(" [%s,%s]" %(p[0].name, p[1].name),)
+#        print("")
 
       # make sure the number of pairs is equal to the operator's order
       if len(pairs) != order:
@@ -1487,17 +1487,17 @@ def removeCoreOps_sf(inList):
       else:
         raise ValueError, "unexpected values:  nCre = %i, nMatch = %i" %(nCre, nMatch)
 
-      # print out the final term
+      # print(out the final term)
       if options.verbose:
-#        print "  topUnmatched: ",
+#        print("  topUnmatched: ",)
 #        for p in topUnmatched:
-#          print " %s" %(p.name),
-#        print ""
-#        print "  botUnmatched: ",
+#          print(" %s" %(p.name),)
+#        print("")
+#        print("  botUnmatched: ",)
 #        for p in botUnmatched:
-#          print " %s" %(p.name),
-#        print ""
-        print "    final term: ", t
+#          print(" %s" %(p.name),)
+#        print("")
+        print("    final term: ", t)
 
       # for the special case of two unmatched pairs, the result is a sum of two different operators.
       # the first replaced the original operator, and the second is added here.
@@ -1507,13 +1507,13 @@ def removeCoreOps_sf(inList):
           raise ValueError, "expected at least 4 remaining indices for nCre == 2 and nMatch == 0 case, but only %i are present" %len(newInices)
         (newIndices[0], newIndices[1]) = (newIndices[1], newIndices[0])
         inList[-1].tensors[opPos] = sfExOp(newIndices)
-        # print out the additional final term
+        # print(out the additional final term)
         if options.verbose:
-          print "2nd final term: ", inList[-1]
+          print("2nd final term: ", inList[-1])
 
-      # print a blank line
+      # print(a blank line)
       if options.verbose:
-        print ""
+        print("")
 
       # increment the index to the next term
       t_num += 1
@@ -1529,8 +1529,8 @@ def removeVirtOps_sf(inList):
   """
 
   if options.verbose:
-    print "removing terms containing a spin-free operator with a virtual index..."
-    print ""
+    print("removing terms containing a spin-free operator with a virtual index...")
+    print("")
 
   # loop over the terms in inList
   i = 0
@@ -1551,7 +1551,7 @@ def removeVirtOps_sf(inList):
     # remove the term if a spin-free excitation operator had a virtual index
     if hasVirtual:
       if options.verbose:
-        print " removing term: ", inList[i]
+        print(" removing term: ", inList[i])
       del inList[i]
 
     # otherwise, move to the next term
@@ -1559,7 +1559,7 @@ def removeVirtOps_sf(inList):
       i += 1
 
   if options.verbose:
-    print ""
+    print("")
 
 
 #--------------------------------------------------------------------------------------------------

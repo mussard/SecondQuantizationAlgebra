@@ -64,14 +64,14 @@ class symmetry:
       raise TypeError, "factor must be a float or an int."
 
   #------------------------------------------------------------------------------------------------
-  
+
   def __cmp__(self,other):
     if not isinstance(other,symmetry):
       raise TypeError, "can only compare a symmetry object to other symmetry objects"
     return cmp(self.pattern,other.pattern)
 
   #------------------------------------------------------------------------------------------------
-  
+
   def __str__(self):
     retval = str(self.pattern)
     retval += "%15.5e" %self.factor

@@ -39,9 +39,9 @@ for tag_h1_p in [tag_active, tag_virtual]:
         q = sqa.index('q', [tag_h1_q], True)
         E_pq = [sqa.sfExOp([p, q])]
         h_pq = sqa.tensor('h', [p, q], [hsym])
-        
+
         term1 = sqa.term( 1.0, [], E_iajb + [h_pq] + E_pq + E_dlck)
-        
+
         batch1 = sqa.normalOrder(term1)
 
         sqa.removeVirtOps_sf(batch1)
@@ -51,46 +51,47 @@ for tag_h1_p in [tag_active, tag_virtual]:
 
         sqa.combineTerms(batch1)
         sqa.termChop(batch1)
-                
+
         result += batch1
 
         sqa.combineTerms(result)
-        sqa.termChop(result)                
+        sqa.termChop(result)
 
 for tag_h2_p in [tag_active, tag_virtual]:
     for tag_h2_q in [tag_active, tag_virtual]:
         for tag_h2_r in [tag_active, tag_virtual]:
-            for tag_h2_s in [tag_active, tag_virtual]: 
-        
+            for tag_h2_s in [tag_active, tag_virtual]:
+
                 p = sqa.index('p', [tag_h2_p], True)
                 q = sqa.index('q', [tag_h2_q], True)
                 r = sqa.index('r', [tag_h2_r], True)
                 s = sqa.index('s', [tag_h2_s], True)
                 E_pqrs = [sqa.sfExOp([p, q, r, s])]
                 V_pqrs = sqa.tensor('V', [p, q, r, s], [Dsym_a, Dsym_b, Dsym_c])
-        
+
                 term1 = sqa.term( 0.5, [], E_iajb + [V_pqrs] + E_pqrs + E_dlck)
-        
+
                 batch1 = sqa.normalOrder(term1)
-        
+
                 sqa.removeVirtOps_sf(batch1)
-        
+
                 for t in batch1:
                     t.contractDeltaFuncs_new()
-        
+
                 sqa.combineTerms(batch1)
                 sqa.termChop(batch1)
-        
+
                 result += batch1
-                    
+
                 sqa.combineTerms(result)
-                sqa.termChop(result)                
+                sqa.termChop(result)
 
 
 print ""
 print "* The one- and two-body parts....."
 print ""
-
+#import pdb
+#pdb.set_trace()
 result = sqa.convert2Mulliken(result)
 
 num = 0
@@ -105,7 +106,7 @@ sqa.factorize(Hdiag, result, 'diag_oovv_oovv', True, 'ham', 'V', 'T', 'int')
 
 # # Calculation of the overlap elements .....
 # term1 = sqa.term( 1.0, [], E_iajb + E_dlck)
-        
+
 # batch1 = sqa.normalOrder(term1)
 
 # sqa.removeVirtOps_sf(batch1)
@@ -115,11 +116,11 @@ sqa.factorize(Hdiag, result, 'diag_oovv_oovv', True, 'ham', 'V', 'T', 'int')
 
 # sqa.combineTerms(batch1)
 # sqa.termChop(batch1)
-                
+
 # result = batch1
 
 # sqa.combineTerms(result)
-# sqa.termChop(result)                
+# sqa.termChop(result)
 
 # print ""
 # print "* The overlap element....."
@@ -133,4 +134,4 @@ sqa.factorize(Hdiag, result, 'diag_oovv_oovv', True, 'ham', 'V', 'T', 'int')
 #     num += 1
 
 
-        
+

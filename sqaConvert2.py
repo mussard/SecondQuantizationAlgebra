@@ -15,7 +15,7 @@
 #   E. Neuscamman, T. Yanai, and G. K.-L. Chan.
 #   J. Chem. Phys. 130, 124102 (2009)
 #
-# Also, 
+# Also,
 #   Masaaki Saitow, Yuki Kurashige, and Takeshi Yanai.
 #   J. Chem. Phys. ***, ****** (2013)
 #
@@ -174,7 +174,7 @@ def ReadD4(Spaces, D4, extRdm4, File):
   i2 = D4.indices[extRdm4[1]].name
 
   File.write(\
-"""  %s// Load D4 from disk, or GA .... 
+"""  %s// Load D4 from disk, or GA ....
   %sint imoi = amo2imo[i%s];
   %sint imoj = amo2imo[i%s];
 

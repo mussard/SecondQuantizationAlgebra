@@ -62,7 +62,7 @@ def commutator(leftInput, rightInput, contract = True, combine = True):
     for t in noTerms:
       t.contractDeltaFuncs()
 
-  # Remove any terms that are zero 
+  # Remove any terms that are zero
   termChop(noTerms)
 
   # Combine any like terms unless told not to

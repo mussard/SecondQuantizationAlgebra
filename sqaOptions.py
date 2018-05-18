@@ -25,6 +25,7 @@ class sqaOptions:
     self.alpha_type = ('alpha',)
     self.beta_type = ('beta',)
     self.core_type = ('core',)
+    self.auxiliary_type = ('aux',)
     self.active_type = ('active',)
     self.virtual_type = ('virtual',)
 

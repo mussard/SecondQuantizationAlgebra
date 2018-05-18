@@ -46,6 +46,7 @@ from sqaTerm import  \
   termChop
 
 from sqaNormalOrder import \
+  extendedNormalOrder,     \
   normalOrder,             \
   contractCoreOps_sf
 
