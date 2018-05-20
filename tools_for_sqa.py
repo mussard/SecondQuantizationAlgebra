@@ -10,7 +10,6 @@ def string_of_names(list):
       line+='o'
     elif iter.indType[0]==sqa.options.virtual_type:
       line+='v'
-    #line=line+iter.name[0]
   return line.lower()
 def code(input_list):
   if any(isinstance(el, list) for el in input_list):
@@ -18,20 +17,14 @@ def code(input_list):
     for i in range(len(input_list)):
       line+=code(input_list[i])
     return line
-  if len(input_list)==4:
-    line=string_of_names([input_list[i] for i in [0,2,1,3]])
-  elif len(input_list)==2:
-    line=string_of_names(input_list)
-  elif len(input_list)==0:
+  if len(input_list)==0:
     line=''
   else:
-    print('ERROR code')
-    exit()
+    line=string_of_names(input_list)
   return line.lower()
-def pattern_from_terms(list_of_terms):
+def pattern(list_of_terms):
   cre=[]
   des=[]
-  print [t.name for term in list_of_terms for t in term.tensors]
   for term in list_of_terms:
     ExOp=[term.tensors[i] for i in range(len(term.tensors))\
                           if isinstance(term.tensors[i],sqa.sfExOp)]
@@ -40,7 +33,6 @@ def pattern_from_terms(list_of_terms):
     des+=[ExOp[i].indices[order[i]/2:] for i in range(len(ExOp))]
   cre=[inner for outer in cre for inner in outer]
   des=[inner for outer in des for inner in outer]
-  print [i.name for i in cre], [i.name for i in des]
   countO=0
   countV=0
   for ind in cre:
@@ -53,32 +45,18 @@ def pattern_from_terms(list_of_terms):
       countO-=1
     if ind.indType[0]==sqa.options.virtual_type:
       countV-=1
-  print countV,countO
   return [countO,countV]
-def pattern(string):
-  countO=0
-  countV=0
-  for iter in range(len(string)-1,-1,-1):
-    if iter%2==0:
-      mult=1
-    else:
-      mult=-1
-    if string[iter]=='o':
-      countO=countO+mult
-    if string[iter]=='v':
-      countV=countV+mult
-  return [countO,countV]
-def is_non_zero(string):
-  list=pattern(string)
+def is_non_zero(list_of_terms):
+  list=pattern(list_of_terms)
   total=abs(list[0])+abs(list[1])
   return total==0
 def list_indexes(list_of_terms):
   string=''
   for term in list_of_terms:
-    indexes=[term.tensors[i].indices for i in range(len(term.tensors)) if isinstance(term.tensors[i],sqa.sfExOp)]
-   #print(term,indexes)
+    indexes=[term.tensors[i].indices\
+             for i in range(len(term.tensors))\
+             if isinstance(term.tensors[i],sqa.sfExOp)]
     string+=code(indexes)
- #print '< %-25s H:%-25s %-25s > is %-5s %-s'%(left.tensors[-1],elt.tensors[-1],right.tensors[-1],is_non_zero(string),string)
   return string
 def list_tensors(term):
   string=''
