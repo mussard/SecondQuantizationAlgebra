@@ -1,0 +1,4 @@
+ (   4.00000)   kdelta[Ap,Aq] kdelta[Ci,Ck] kdelta[Cj,Cl] kdelta[Va,Vb] 
+ (  -2.00000)   kdelta[Ap,Aq] kdelta[Ci,Cl] kdelta[Cj,Ck] kdelta[Va,Vb] 
+ (  -2.00000)   kdelta[Ci,Ck] kdelta[Cj,Cl] kdelta[Va,Vb] E1[Ap,Aq] 
+ (   1.00000)   kdelta[Ci,Cl] kdelta[Cj,Ck] kdelta[Va,Vb] E1[Ap,Aq] 

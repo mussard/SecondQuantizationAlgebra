@@ -1,0 +1,1380 @@
+ (   4.00000)    int2[Ap,Aq,Ar,As] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (  -2.00000)    int2[Ap,Aq,Ar,As] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (  -2.00000)    int2[Ap,Aq,As,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (   4.00000)    int2[Ap,Aq,As,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (   8.00000)    int2[Ap,Ar,Ci,Ck] kdelta[Aq,As] kdelta[Cj,Cl] 
+ (  -4.00000)    int2[Ap,Ar,Ci,Cl] kdelta[Aq,As] kdelta[Cj,Ck] 
+ (  -4.00000)    int2[Ap,Ar,Cj,Ck] kdelta[Aq,As] kdelta[Ci,Cl] 
+ (   2.00000)    int2[Ap,Ar,Cj,Cl] kdelta[Aq,As] kdelta[Ci,Ck] 
+ (  -4.00000)    int2[Ap,As,Ci,Ck] kdelta[Aq,Ar] kdelta[Cj,Cl] 
+ (   8.00000)    int2[Ap,As,Ci,Cl] kdelta[Aq,Ar] kdelta[Cj,Ck] 
+ (   2.00000)    int2[Ap,As,Cj,Ck] kdelta[Aq,Ar] kdelta[Ci,Cl] 
+ (  -4.00000)    int2[Ap,As,Cj,Cl] kdelta[Aq,Ar] kdelta[Ci,Ck] 
+ (  -4.00000)    int2[Ap,Ci,Ar,Ck] kdelta[Aq,As] kdelta[Cj,Cl] 
+ (   2.00000)    int2[Ap,Ci,Ar,Cl] kdelta[Aq,As] kdelta[Cj,Ck] 
+ (   2.00000)    int2[Ap,Ci,As,Ck] kdelta[Aq,Ar] kdelta[Cj,Cl] 
+ (  -4.00000)    int2[Ap,Ci,As,Cl] kdelta[Aq,Ar] kdelta[Cj,Ck] 
+ (   2.00000)    int2[Ap,Cj,Ar,Ck] kdelta[Aq,As] kdelta[Ci,Cl] 
+ (  -4.00000)    int2[Ap,Cj,Ar,Cl] kdelta[Aq,As] kdelta[Ci,Ck] 
+ (  -4.00000)    int2[Ap,Cj,As,Ck] kdelta[Aq,Ar] kdelta[Ci,Cl] 
+ (   2.00000)    int2[Ap,Cj,As,Cl] kdelta[Aq,Ar] kdelta[Ci,Ck] 
+ (  -4.00000)    int2[Aq,Ar,Ci,Ck] kdelta[Ap,As] kdelta[Cj,Cl] 
+ (   2.00000)    int2[Aq,Ar,Ci,Cl] kdelta[Ap,As] kdelta[Cj,Ck] 
+ (   8.00000)    int2[Aq,Ar,Cj,Ck] kdelta[Ap,As] kdelta[Ci,Cl] 
+ (  -4.00000)    int2[Aq,Ar,Cj,Cl] kdelta[Ap,As] kdelta[Ci,Ck] 
+ (   2.00000)    int2[Aq,As,Ci,Ck] kdelta[Ap,Ar] kdelta[Cj,Cl] 
+ (  -4.00000)    int2[Aq,As,Ci,Cl] kdelta[Ap,Ar] kdelta[Cj,Ck] 
+ (  -4.00000)    int2[Aq,As,Cj,Ck] kdelta[Ap,Ar] kdelta[Ci,Cl] 
+ (   8.00000)    int2[Aq,As,Cj,Cl] kdelta[Ap,Ar] kdelta[Ci,Ck] 
+ (   2.00000)    int2[Aq,Ci,Ar,Ck] kdelta[Ap,As] kdelta[Cj,Cl] 
+ (  -4.00000)    int2[Aq,Ci,Ar,Cl] kdelta[Ap,As] kdelta[Cj,Ck] 
+ (  -4.00000)    int2[Aq,Ci,As,Ck] kdelta[Ap,Ar] kdelta[Cj,Cl] 
+ (   2.00000)    int2[Aq,Ci,As,Cl] kdelta[Ap,Ar] kdelta[Cj,Ck] 
+ (  -4.00000)    int2[Aq,Cj,Ar,Ck] kdelta[Ap,As] kdelta[Ci,Cl] 
+ (   2.00000)    int2[Aq,Cj,Ar,Cl] kdelta[Ap,As] kdelta[Ci,Ck] 
+ (   2.00000)    int2[Aq,Cj,As,Ck] kdelta[Ap,Ar] kdelta[Ci,Cl] 
+ (  -4.00000)    int2[Aq,Cj,As,Cl] kdelta[Ap,Ar] kdelta[Ci,Ck] 
+ (   4.00000)    int2[Ci,Cj,Ck,Cl] kdelta[Ap,Ar] kdelta[Aq,As] 
+ (  -2.00000)    int2[Ci,Cj,Ck,Cl] kdelta[Ap,As] kdelta[Aq,Ar] 
+ (  -2.00000)    int2[Ci,Cj,Cl,Ck] kdelta[Ap,Ar] kdelta[Aq,As] 
+ (   4.00000)    int2[Ci,Cj,Cl,Ck] kdelta[Ap,As] kdelta[Aq,Ar] 
+ (   4.00000)    int1[Ap,Ar] kdelta[Aq,As] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (  -2.00000)    int1[Ap,Ar] kdelta[Aq,As] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (  -2.00000)    int1[Ap,As] kdelta[Aq,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (   4.00000)    int1[Ap,As] kdelta[Aq,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (  -2.00000)    int1[Aq,Ar] kdelta[Ap,As] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (   4.00000)    int1[Aq,Ar] kdelta[Ap,As] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (   4.00000)    int1[Aq,As] kdelta[Ap,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (  -2.00000)    int1[Aq,As] kdelta[Ap,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (  -4.00000)    int1[Ci,Ck] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Cj,Cl] 
+ (   2.00000)    int1[Ci,Ck] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Cj,Cl] 
+ (   2.00000)    int1[Ci,Cl] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Cj,Ck] 
+ (  -4.00000)    int1[Ci,Cl] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Cj,Ck] 
+ (   2.00000)    int1[Cj,Ck] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Ci,Cl] 
+ (  -4.00000)    int1[Cj,Ck] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Ci,Cl] 
+ (  -4.00000)    int1[Cj,Cl] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Ci,Ck] 
+ (   2.00000)    int1[Cj,Cl] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Ci,Ck] 
+ (  -4.00000)    int2[Ap,Ar,a,a] kdelta[Aq,As] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (   2.00000)    int2[Ap,Ar,a,a] kdelta[Aq,As] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (   2.00000)    int2[Ap,As,a,a] kdelta[Aq,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (  -4.00000)    int2[Ap,As,a,a] kdelta[Aq,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (   8.00000)    int2[Ap,a,Ar,a] kdelta[Aq,As] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (  -4.00000)    int2[Ap,a,Ar,a] kdelta[Aq,As] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (  -4.00000)    int2[Ap,a,As,a] kdelta[Aq,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (   8.00000)    int2[Ap,a,As,a] kdelta[Aq,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (   2.00000)    int2[Aq,Ar,a,a] kdelta[Ap,As] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (  -4.00000)    int2[Aq,Ar,a,a] kdelta[Ap,As] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (  -4.00000)    int2[Aq,As,a,a] kdelta[Ap,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (   2.00000)    int2[Aq,As,a,a] kdelta[Ap,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (  -4.00000)    int2[Aq,a,Ar,a] kdelta[Ap,As] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (   8.00000)    int2[Aq,a,Ar,a] kdelta[Ap,As] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (   8.00000)    int2[Aq,a,As,a] kdelta[Ap,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] 
+ (  -4.00000)    int2[Aq,a,As,a] kdelta[Ap,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] 
+ (   4.00000)    int2[Ci,Ck,a,a] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Cj,Cl] 
+ (  -2.00000)    int2[Ci,Ck,a,a] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Cj,Cl] 
+ (  -2.00000)    int2[Ci,Cl,a,a] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Cj,Ck] 
+ (   4.00000)    int2[Ci,Cl,a,a] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Cj,Ck] 
+ (  -8.00000)    int2[Ci,a,Ck,a] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Cj,Cl] 
+ (   4.00000)    int2[Ci,a,Ck,a] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Cj,Cl] 
+ (   4.00000)    int2[Ci,a,Cl,a] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Cj,Ck] 
+ (  -8.00000)    int2[Ci,a,Cl,a] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Cj,Ck] 
+ (  -2.00000)    int2[Cj,Ck,a,a] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Ci,Cl] 
+ (   4.00000)    int2[Cj,Ck,a,a] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Ci,Cl] 
+ (   4.00000)    int2[Cj,Cl,a,a] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Ci,Ck] 
+ (  -2.00000)    int2[Cj,Cl,a,a] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Ci,Ck] 
+ (   4.00000)    int2[Cj,a,Ck,a] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Ci,Cl] 
+ (  -8.00000)    int2[Cj,a,Ck,a] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Ci,Cl] 
+ (  -8.00000)    int2[Cj,a,Cl,a] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Ci,Ck] 
+ (   4.00000)    int2[Cj,a,Cl,a] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Ci,Ck] 
+ (  -4.00000)    int2[Ap,Ar,Ci,Ck] kdelta[Cj,Cl] E1[Aq,As] 
+ (   2.00000)    int2[Ap,Ar,Ci,Cl] kdelta[Cj,Ck] E1[Aq,As] 
+ (   2.00000)    int2[Ap,Ar,Cj,Ck] kdelta[Ci,Cl] E1[Aq,As] 
+ (  -1.00000)    int2[Ap,Ar,Cj,Cl] kdelta[Ci,Ck] E1[Aq,As] 
+ (   2.00000)    int2[Ap,As,Ci,Ck] kdelta[Cj,Cl] E1[Aq,Ar] 
+ (  -4.00000)    int2[Ap,As,Ci,Cl] kdelta[Cj,Ck] E1[Aq,Ar] 
+ (  -1.00000)    int2[Ap,As,Cj,Ck] kdelta[Ci,Cl] E1[Aq,Ar] 
+ (   2.00000)    int2[Ap,As,Cj,Cl] kdelta[Ci,Ck] E1[Aq,Ar] 
+ (   2.00000)    int2[Ap,Ci,Ar,Ck] kdelta[Cj,Cl] E1[Aq,As] 
+ (  -1.00000)    int2[Ap,Ci,Ar,Cl] kdelta[Cj,Ck] E1[Aq,As] 
+ (  -1.00000)    int2[Ap,Ci,As,Ck] kdelta[Cj,Cl] E1[Aq,Ar] 
+ (   2.00000)    int2[Ap,Ci,As,Cl] kdelta[Cj,Ck] E1[Aq,Ar] 
+ (  -1.00000)    int2[Ap,Cj,Ar,Ck] kdelta[Ci,Cl] E1[Aq,As] 
+ (   2.00000)    int2[Ap,Cj,Ar,Cl] kdelta[Ci,Ck] E1[Aq,As] 
+ (   2.00000)    int2[Ap,Cj,As,Ck] kdelta[Ci,Cl] E1[Aq,Ar] 
+ (  -1.00000)    int2[Ap,Cj,As,Cl] kdelta[Ci,Ck] E1[Aq,Ar] 
+ (   2.00000)    int2[Aq,Ar,Ci,Ck] kdelta[Cj,Cl] E1[Ap,As] 
+ (  -1.00000)    int2[Aq,Ar,Ci,Cl] kdelta[Cj,Ck] E1[Ap,As] 
+ (  -4.00000)    int2[Aq,Ar,Cj,Ck] kdelta[Ci,Cl] E1[Ap,As] 
+ (   2.00000)    int2[Aq,Ar,Cj,Cl] kdelta[Ci,Ck] E1[Ap,As] 
+ (  -1.00000)    int2[Aq,As,Ci,Ck] kdelta[Cj,Cl] E1[Ap,Ar] 
+ (   2.00000)    int2[Aq,As,Ci,Cl] kdelta[Cj,Ck] E1[Ap,Ar] 
+ (   2.00000)    int2[Aq,As,Cj,Ck] kdelta[Ci,Cl] E1[Ap,Ar] 
+ (  -4.00000)    int2[Aq,As,Cj,Cl] kdelta[Ci,Ck] E1[Ap,Ar] 
+ (  -1.00000)    int2[Aq,Ci,Ar,Ck] kdelta[Cj,Cl] E1[Ap,As] 
+ (   2.00000)    int2[Aq,Ci,Ar,Cl] kdelta[Cj,Ck] E1[Ap,As] 
+ (   2.00000)    int2[Aq,Ci,As,Ck] kdelta[Cj,Cl] E1[Ap,Ar] 
+ (  -1.00000)    int2[Aq,Ci,As,Cl] kdelta[Cj,Ck] E1[Ap,Ar] 
+ (   2.00000)    int2[Aq,Cj,Ar,Ck] kdelta[Ci,Cl] E1[Ap,As] 
+ (  -1.00000)    int2[Aq,Cj,Ar,Cl] kdelta[Ci,Ck] E1[Ap,As] 
+ (  -1.00000)    int2[Aq,Cj,As,Ck] kdelta[Ci,Cl] E1[Ap,Ar] 
+ (   2.00000)    int2[Aq,Cj,As,Cl] kdelta[Ci,Ck] E1[Ap,Ar] 
+ (  -2.00000)    int2[Ci,Cj,Ck,Cl] kdelta[Ap,Ar] E1[Aq,As] 
+ (   1.00000)    int2[Ci,Cj,Ck,Cl] kdelta[Ap,As] E1[Aq,Ar] 
+ (   1.00000)    int2[Ci,Cj,Ck,Cl] kdelta[Aq,Ar] E1[Ap,As] 
+ (  -2.00000)    int2[Ci,Cj,Ck,Cl] kdelta[Aq,As] E1[Ap,Ar] 
+ (   1.00000)    int2[Ci,Cj,Cl,Ck] kdelta[Ap,Ar] E1[Aq,As] 
+ (  -2.00000)    int2[Ci,Cj,Cl,Ck] kdelta[Ap,As] E1[Aq,Ar] 
+ (  -2.00000)    int2[Ci,Cj,Cl,Ck] kdelta[Aq,Ar] E1[Ap,As] 
+ (   1.00000)    int2[Ci,Cj,Cl,Ck] kdelta[Aq,As] E1[Ap,Ar] 
+ (  -2.00000)    int1[Ap,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Aq,As] 
+ (   1.00000)    int1[Ap,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Aq,As] 
+ (   1.00000)    int1[Ap,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Aq,Ar] 
+ (  -2.00000)    int1[Ap,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Aq,Ar] 
+ (   1.00000)    int1[Aq,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Ap,As] 
+ (  -2.00000)    int1[Aq,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Ap,As] 
+ (  -2.00000)    int1[Aq,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Ap,Ar] 
+ (   1.00000)    int1[Aq,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Ap,Ar] 
+ (   2.00000)    int1[Ci,Ck] kdelta[Ap,Ar] kdelta[Cj,Cl] E1[Aq,As] 
+ (  -1.00000)    int1[Ci,Ck] kdelta[Ap,As] kdelta[Cj,Cl] E1[Aq,Ar] 
+ (  -1.00000)    int1[Ci,Ck] kdelta[Aq,Ar] kdelta[Cj,Cl] E1[Ap,As] 
+ (   2.00000)    int1[Ci,Ck] kdelta[Aq,As] kdelta[Cj,Cl] E1[Ap,Ar] 
+ (  -1.00000)    int1[Ci,Cl] kdelta[Ap,Ar] kdelta[Cj,Ck] E1[Aq,As] 
+ (   2.00000)    int1[Ci,Cl] kdelta[Ap,As] kdelta[Cj,Ck] E1[Aq,Ar] 
+ (   2.00000)    int1[Ci,Cl] kdelta[Aq,Ar] kdelta[Cj,Ck] E1[Ap,As] 
+ (  -1.00000)    int1[Ci,Cl] kdelta[Aq,As] kdelta[Cj,Ck] E1[Ap,Ar] 
+ (  -1.00000)    int1[Cj,Ck] kdelta[Ap,Ar] kdelta[Ci,Cl] E1[Aq,As] 
+ (   2.00000)    int1[Cj,Ck] kdelta[Ap,As] kdelta[Ci,Cl] E1[Aq,Ar] 
+ (   2.00000)    int1[Cj,Ck] kdelta[Aq,Ar] kdelta[Ci,Cl] E1[Ap,As] 
+ (  -1.00000)    int1[Cj,Ck] kdelta[Aq,As] kdelta[Ci,Cl] E1[Ap,Ar] 
+ (   2.00000)    int1[Cj,Cl] kdelta[Ap,Ar] kdelta[Ci,Ck] E1[Aq,As] 
+ (  -1.00000)    int1[Cj,Cl] kdelta[Ap,As] kdelta[Ci,Ck] E1[Aq,Ar] 
+ (  -1.00000)    int1[Cj,Cl] kdelta[Aq,Ar] kdelta[Ci,Ck] E1[Ap,As] 
+ (   2.00000)    int1[Cj,Cl] kdelta[Aq,As] kdelta[Ci,Ck] E1[Ap,Ar] 
+ (  -2.00000)    int2[Ap,Aq,Ar,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,As] 
+ (   1.00000)    int2[Ap,Aq,Ar,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,As] 
+ (   1.00000)    int2[Ap,Aq,As,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,Ar] 
+ (  -2.00000)    int2[Ap,Aq,As,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,Ar] 
+ (   1.00000)    int2[Ap,Aq,a,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,As] 
+ (  -2.00000)    int2[Ap,Aq,a,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,As] 
+ (  -2.00000)    int2[Ap,Aq,a,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,Ar] 
+ (   1.00000)    int2[Ap,Aq,a,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,Ar] 
+ (   1.00000)    int2[Ap,Ar,As,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Aq,a] 
+ (  -2.00000)    int2[Ap,Ar,As,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Aq,a] 
+ (   2.00000)    int2[Ap,Ar,a,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Aq,As] 
+ (  -1.00000)    int2[Ap,Ar,a,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Aq,As] 
+ (  -2.00000)    int2[Ap,As,Ar,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Aq,a] 
+ (   1.00000)    int2[Ap,As,Ar,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Aq,a] 
+ (  -1.00000)    int2[Ap,As,a,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Aq,Ar] 
+ (   2.00000)    int2[Ap,As,a,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Aq,Ar] 
+ (  -1.00000)    int2[Ap,Ci,a,Ck] kdelta[Aq,Ar] kdelta[Cj,Cl] E1[a,As] 
+ (   2.00000)    int2[Ap,Ci,a,Ck] kdelta[Aq,As] kdelta[Cj,Cl] E1[a,Ar] 
+ (   2.00000)    int2[Ap,Ci,a,Cl] kdelta[Aq,Ar] kdelta[Cj,Ck] E1[a,As] 
+ (  -1.00000)    int2[Ap,Ci,a,Cl] kdelta[Aq,As] kdelta[Cj,Ck] E1[a,Ar] 
+ (   2.00000)    int2[Ap,Cj,a,Ck] kdelta[Aq,Ar] kdelta[Ci,Cl] E1[a,As] 
+ (  -1.00000)    int2[Ap,Cj,a,Ck] kdelta[Aq,As] kdelta[Ci,Cl] E1[a,Ar] 
+ (  -1.00000)    int2[Ap,Cj,a,Cl] kdelta[Aq,Ar] kdelta[Ci,Ck] E1[a,As] 
+ (   2.00000)    int2[Ap,Cj,a,Cl] kdelta[Aq,As] kdelta[Ci,Ck] E1[a,Ar] 
+ (   2.00000)    int2[Ap,Ck,Ci,a] kdelta[Aq,Ar] kdelta[Cj,Cl] E1[a,As] 
+ (  -4.00000)    int2[Ap,Ck,Ci,a] kdelta[Aq,As] kdelta[Cj,Cl] E1[a,Ar] 
+ (  -1.00000)    int2[Ap,Ck,Cj,a] kdelta[Aq,Ar] kdelta[Ci,Cl] E1[a,As] 
+ (   2.00000)    int2[Ap,Ck,Cj,a] kdelta[Aq,As] kdelta[Ci,Cl] E1[a,Ar] 
+ (  -4.00000)    int2[Ap,Cl,Ci,a] kdelta[Aq,Ar] kdelta[Cj,Ck] E1[a,As] 
+ (   2.00000)    int2[Ap,Cl,Ci,a] kdelta[Aq,As] kdelta[Cj,Ck] E1[a,Ar] 
+ (   2.00000)    int2[Ap,Cl,Cj,a] kdelta[Aq,Ar] kdelta[Ci,Ck] E1[a,As] 
+ (  -1.00000)    int2[Ap,Cl,Cj,a] kdelta[Aq,As] kdelta[Ci,Ck] E1[a,Ar] 
+ (  -4.00000)    int2[Ap,a,Ar,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Aq,As] 
+ (   2.00000)    int2[Ap,a,Ar,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Aq,As] 
+ (   2.00000)    int2[Ap,a,As,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Aq,Ar] 
+ (  -4.00000)    int2[Ap,a,As,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Aq,Ar] 
+ (  -2.00000)    int2[Aq,Ar,As,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Ap,a] 
+ (   1.00000)    int2[Aq,Ar,As,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Ap,a] 
+ (  -1.00000)    int2[Aq,Ar,a,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Ap,As] 
+ (   2.00000)    int2[Aq,Ar,a,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Ap,As] 
+ (   1.00000)    int2[Aq,As,Ar,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Ap,a] 
+ (  -2.00000)    int2[Aq,As,Ar,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Ap,a] 
+ (   2.00000)    int2[Aq,As,a,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Ap,Ar] 
+ (  -1.00000)    int2[Aq,As,a,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Ap,Ar] 
+ (   2.00000)    int2[Aq,Ci,a,Ck] kdelta[Ap,Ar] kdelta[Cj,Cl] E1[a,As] 
+ (  -1.00000)    int2[Aq,Ci,a,Ck] kdelta[Ap,As] kdelta[Cj,Cl] E1[a,Ar] 
+ (  -1.00000)    int2[Aq,Ci,a,Cl] kdelta[Ap,Ar] kdelta[Cj,Ck] E1[a,As] 
+ (   2.00000)    int2[Aq,Ci,a,Cl] kdelta[Ap,As] kdelta[Cj,Ck] E1[a,Ar] 
+ (  -1.00000)    int2[Aq,Cj,a,Ck] kdelta[Ap,Ar] kdelta[Ci,Cl] E1[a,As] 
+ (   2.00000)    int2[Aq,Cj,a,Ck] kdelta[Ap,As] kdelta[Ci,Cl] E1[a,Ar] 
+ (   2.00000)    int2[Aq,Cj,a,Cl] kdelta[Ap,Ar] kdelta[Ci,Ck] E1[a,As] 
+ (  -1.00000)    int2[Aq,Cj,a,Cl] kdelta[Ap,As] kdelta[Ci,Ck] E1[a,Ar] 
+ (  -1.00000)    int2[Aq,Ck,Ci,a] kdelta[Ap,Ar] kdelta[Cj,Cl] E1[a,As] 
+ (   2.00000)    int2[Aq,Ck,Ci,a] kdelta[Ap,As] kdelta[Cj,Cl] E1[a,Ar] 
+ (   2.00000)    int2[Aq,Ck,Cj,a] kdelta[Ap,Ar] kdelta[Ci,Cl] E1[a,As] 
+ (  -4.00000)    int2[Aq,Ck,Cj,a] kdelta[Ap,As] kdelta[Ci,Cl] E1[a,Ar] 
+ (   2.00000)    int2[Aq,Cl,Ci,a] kdelta[Ap,Ar] kdelta[Cj,Ck] E1[a,As] 
+ (  -1.00000)    int2[Aq,Cl,Ci,a] kdelta[Ap,As] kdelta[Cj,Ck] E1[a,Ar] 
+ (  -4.00000)    int2[Aq,Cl,Cj,a] kdelta[Ap,Ar] kdelta[Ci,Ck] E1[a,As] 
+ (   2.00000)    int2[Aq,Cl,Cj,a] kdelta[Ap,As] kdelta[Ci,Ck] E1[a,Ar] 
+ (   2.00000)    int2[Aq,a,Ar,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Ap,As] 
+ (  -4.00000)    int2[Aq,a,Ar,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Ap,As] 
+ (  -4.00000)    int2[Aq,a,As,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[Ap,Ar] 
+ (   2.00000)    int2[Aq,a,As,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[Ap,Ar] 
+ (   2.00000)    int2[Ar,Ci,Ck,a] kdelta[Ap,As] kdelta[Cj,Cl] E1[Aq,a] 
+ (  -4.00000)    int2[Ar,Ci,Ck,a] kdelta[Aq,As] kdelta[Cj,Cl] E1[Ap,a] 
+ (  -1.00000)    int2[Ar,Ci,Cl,a] kdelta[Ap,As] kdelta[Cj,Ck] E1[Aq,a] 
+ (   2.00000)    int2[Ar,Ci,Cl,a] kdelta[Aq,As] kdelta[Cj,Ck] E1[Ap,a] 
+ (  -1.00000)    int2[Ar,Ci,a,Ck] kdelta[Ap,As] kdelta[Cj,Cl] E1[Aq,a] 
+ (   2.00000)    int2[Ar,Ci,a,Ck] kdelta[Aq,As] kdelta[Cj,Cl] E1[Ap,a] 
+ (   2.00000)    int2[Ar,Ci,a,Cl] kdelta[Ap,As] kdelta[Cj,Ck] E1[Aq,a] 
+ (  -1.00000)    int2[Ar,Ci,a,Cl] kdelta[Aq,As] kdelta[Cj,Ck] E1[Ap,a] 
+ (  -4.00000)    int2[Ar,Cj,Ck,a] kdelta[Ap,As] kdelta[Ci,Cl] E1[Aq,a] 
+ (   2.00000)    int2[Ar,Cj,Ck,a] kdelta[Aq,As] kdelta[Ci,Cl] E1[Ap,a] 
+ (   2.00000)    int2[Ar,Cj,Cl,a] kdelta[Ap,As] kdelta[Ci,Ck] E1[Aq,a] 
+ (  -1.00000)    int2[Ar,Cj,Cl,a] kdelta[Aq,As] kdelta[Ci,Ck] E1[Ap,a] 
+ (   2.00000)    int2[Ar,Cj,a,Ck] kdelta[Ap,As] kdelta[Ci,Cl] E1[Aq,a] 
+ (  -1.00000)    int2[Ar,Cj,a,Ck] kdelta[Aq,As] kdelta[Ci,Cl] E1[Ap,a] 
+ (  -1.00000)    int2[Ar,Cj,a,Cl] kdelta[Ap,As] kdelta[Ci,Ck] E1[Aq,a] 
+ (   2.00000)    int2[Ar,Cj,a,Cl] kdelta[Aq,As] kdelta[Ci,Ck] E1[Ap,a] 
+ (  -1.00000)    int2[As,Ci,Ck,a] kdelta[Ap,Ar] kdelta[Cj,Cl] E1[Aq,a] 
+ (   2.00000)    int2[As,Ci,Ck,a] kdelta[Aq,Ar] kdelta[Cj,Cl] E1[Ap,a] 
+ (   2.00000)    int2[As,Ci,Cl,a] kdelta[Ap,Ar] kdelta[Cj,Ck] E1[Aq,a] 
+ (  -4.00000)    int2[As,Ci,Cl,a] kdelta[Aq,Ar] kdelta[Cj,Ck] E1[Ap,a] 
+ (   2.00000)    int2[As,Ci,a,Ck] kdelta[Ap,Ar] kdelta[Cj,Cl] E1[Aq,a] 
+ (  -1.00000)    int2[As,Ci,a,Ck] kdelta[Aq,Ar] kdelta[Cj,Cl] E1[Ap,a] 
+ (  -1.00000)    int2[As,Ci,a,Cl] kdelta[Ap,Ar] kdelta[Cj,Ck] E1[Aq,a] 
+ (   2.00000)    int2[As,Ci,a,Cl] kdelta[Aq,Ar] kdelta[Cj,Ck] E1[Ap,a] 
+ (   2.00000)    int2[As,Cj,Ck,a] kdelta[Ap,Ar] kdelta[Ci,Cl] E1[Aq,a] 
+ (  -1.00000)    int2[As,Cj,Ck,a] kdelta[Aq,Ar] kdelta[Ci,Cl] E1[Ap,a] 
+ (  -4.00000)    int2[As,Cj,Cl,a] kdelta[Ap,Ar] kdelta[Ci,Ck] E1[Aq,a] 
+ (   2.00000)    int2[As,Cj,Cl,a] kdelta[Aq,Ar] kdelta[Ci,Ck] E1[Ap,a] 
+ (  -1.00000)    int2[As,Cj,a,Ck] kdelta[Ap,Ar] kdelta[Ci,Cl] E1[Aq,a] 
+ (   2.00000)    int2[As,Cj,a,Ck] kdelta[Aq,Ar] kdelta[Ci,Cl] E1[Ap,a] 
+ (   2.00000)    int2[As,Cj,a,Cl] kdelta[Ap,Ar] kdelta[Ci,Ck] E1[Aq,a] 
+ (  -1.00000)    int2[As,Cj,a,Cl] kdelta[Aq,Ar] kdelta[Ci,Ck] E1[Ap,a] 
+ (  -2.00000)    int2[Ci,Ck,a,a] kdelta[Ap,Ar] kdelta[Cj,Cl] E1[Aq,As] 
+ (   1.00000)    int2[Ci,Ck,a,a] kdelta[Ap,As] kdelta[Cj,Cl] E1[Aq,Ar] 
+ (   1.00000)    int2[Ci,Ck,a,a] kdelta[Aq,Ar] kdelta[Cj,Cl] E1[Ap,As] 
+ (  -2.00000)    int2[Ci,Ck,a,a] kdelta[Aq,As] kdelta[Cj,Cl] E1[Ap,Ar] 
+ (   1.00000)    int2[Ci,Cl,a,a] kdelta[Ap,Ar] kdelta[Cj,Ck] E1[Aq,As] 
+ (  -2.00000)    int2[Ci,Cl,a,a] kdelta[Ap,As] kdelta[Cj,Ck] E1[Aq,Ar] 
+ (  -2.00000)    int2[Ci,Cl,a,a] kdelta[Aq,Ar] kdelta[Cj,Ck] E1[Ap,As] 
+ (   1.00000)    int2[Ci,Cl,a,a] kdelta[Aq,As] kdelta[Cj,Ck] E1[Ap,Ar] 
+ (   4.00000)    int2[Ci,a,Ck,a] kdelta[Ap,Ar] kdelta[Cj,Cl] E1[Aq,As] 
+ (  -2.00000)    int2[Ci,a,Ck,a] kdelta[Ap,As] kdelta[Cj,Cl] E1[Aq,Ar] 
+ (  -2.00000)    int2[Ci,a,Ck,a] kdelta[Aq,Ar] kdelta[Cj,Cl] E1[Ap,As] 
+ (   4.00000)    int2[Ci,a,Ck,a] kdelta[Aq,As] kdelta[Cj,Cl] E1[Ap,Ar] 
+ (  -2.00000)    int2[Ci,a,Cl,a] kdelta[Ap,Ar] kdelta[Cj,Ck] E1[Aq,As] 
+ (   4.00000)    int2[Ci,a,Cl,a] kdelta[Ap,As] kdelta[Cj,Ck] E1[Aq,Ar] 
+ (   4.00000)    int2[Ci,a,Cl,a] kdelta[Aq,Ar] kdelta[Cj,Ck] E1[Ap,As] 
+ (  -2.00000)    int2[Ci,a,Cl,a] kdelta[Aq,As] kdelta[Cj,Ck] E1[Ap,Ar] 
+ (   1.00000)    int2[Cj,Ck,a,a] kdelta[Ap,Ar] kdelta[Ci,Cl] E1[Aq,As] 
+ (  -2.00000)    int2[Cj,Ck,a,a] kdelta[Ap,As] kdelta[Ci,Cl] E1[Aq,Ar] 
+ (  -2.00000)    int2[Cj,Ck,a,a] kdelta[Aq,Ar] kdelta[Ci,Cl] E1[Ap,As] 
+ (   1.00000)    int2[Cj,Ck,a,a] kdelta[Aq,As] kdelta[Ci,Cl] E1[Ap,Ar] 
+ (  -2.00000)    int2[Cj,Cl,a,a] kdelta[Ap,Ar] kdelta[Ci,Ck] E1[Aq,As] 
+ (   1.00000)    int2[Cj,Cl,a,a] kdelta[Ap,As] kdelta[Ci,Ck] E1[Aq,Ar] 
+ (   1.00000)    int2[Cj,Cl,a,a] kdelta[Aq,Ar] kdelta[Ci,Ck] E1[Ap,As] 
+ (  -2.00000)    int2[Cj,Cl,a,a] kdelta[Aq,As] kdelta[Ci,Ck] E1[Ap,Ar] 
+ (  -2.00000)    int2[Cj,a,Ck,a] kdelta[Ap,Ar] kdelta[Ci,Cl] E1[Aq,As] 
+ (   4.00000)    int2[Cj,a,Ck,a] kdelta[Ap,As] kdelta[Ci,Cl] E1[Aq,Ar] 
+ (   4.00000)    int2[Cj,a,Ck,a] kdelta[Aq,Ar] kdelta[Ci,Cl] E1[Ap,As] 
+ (  -2.00000)    int2[Cj,a,Ck,a] kdelta[Aq,As] kdelta[Ci,Cl] E1[Ap,Ar] 
+ (   4.00000)    int2[Cj,a,Cl,a] kdelta[Ap,Ar] kdelta[Ci,Ck] E1[Aq,As] 
+ (  -2.00000)    int2[Cj,a,Cl,a] kdelta[Ap,As] kdelta[Ci,Ck] E1[Aq,Ar] 
+ (  -2.00000)    int2[Cj,a,Cl,a] kdelta[Aq,Ar] kdelta[Ci,Ck] E1[Ap,As] 
+ (   4.00000)    int2[Cj,a,Cl,a] kdelta[Aq,As] kdelta[Ci,Ck] E1[Ap,Ar] 
+ (   1.00000)    int1[Ap,a] kdelta[Aq,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,As] 
+ (  -2.00000)    int1[Ap,a] kdelta[Aq,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,As] 
+ (  -2.00000)    int1[Ap,a] kdelta[Aq,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,Ar] 
+ (   1.00000)    int1[Ap,a] kdelta[Aq,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,Ar] 
+ (  -2.00000)    int1[Aq,a] kdelta[Ap,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,As] 
+ (   1.00000)    int1[Aq,a] kdelta[Ap,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,As] 
+ (   1.00000)    int1[Aq,a] kdelta[Ap,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,Ar] 
+ (  -2.00000)    int1[Aq,a] kdelta[Ap,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,Ar] 
+ (  -2.00000)    int2[Ap,Ar,a,b] kdelta[Aq,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,b] 
+ (   1.00000)    int2[Ap,Ar,a,b] kdelta[Aq,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,b] 
+ (   1.00000)    int2[Ap,As,a,b] kdelta[Aq,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,b] 
+ (  -2.00000)    int2[Ap,As,a,b] kdelta[Aq,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,b] 
+ (   4.00000)    int2[Ap,a,Ar,b] kdelta[Aq,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,b] 
+ (  -2.00000)    int2[Ap,a,Ar,b] kdelta[Aq,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,b] 
+ (  -2.00000)    int2[Ap,a,As,b] kdelta[Aq,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,b] 
+ (   4.00000)    int2[Ap,a,As,b] kdelta[Aq,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,b] 
+ (  -1.00000)    int2[Ap,a,a,b] kdelta[Aq,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[b,As] 
+ (   2.00000)    int2[Ap,a,a,b] kdelta[Aq,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[b,As] 
+ (   2.00000)    int2[Ap,a,a,b] kdelta[Aq,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[b,Ar] 
+ (  -1.00000)    int2[Ap,a,a,b] kdelta[Aq,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[b,Ar] 
+ (   2.00000)    int2[Ap,a,b,a] kdelta[Aq,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[b,As] 
+ (  -4.00000)    int2[Ap,a,b,a] kdelta[Aq,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[b,As] 
+ (  -4.00000)    int2[Ap,a,b,a] kdelta[Aq,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[b,Ar] 
+ (   2.00000)    int2[Ap,a,b,a] kdelta[Aq,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[b,Ar] 
+ (   1.00000)    int2[Aq,Ar,a,b] kdelta[Ap,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,b] 
+ (  -2.00000)    int2[Aq,Ar,a,b] kdelta[Ap,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,b] 
+ (  -2.00000)    int2[Aq,As,a,b] kdelta[Ap,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,b] 
+ (   1.00000)    int2[Aq,As,a,b] kdelta[Ap,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,b] 
+ (  -2.00000)    int2[Aq,a,Ar,b] kdelta[Ap,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,b] 
+ (   4.00000)    int2[Aq,a,Ar,b] kdelta[Ap,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,b] 
+ (   4.00000)    int2[Aq,a,As,b] kdelta[Ap,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[a,b] 
+ (  -2.00000)    int2[Aq,a,As,b] kdelta[Ap,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[a,b] 
+ (   2.00000)    int2[Aq,a,a,b] kdelta[Ap,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[b,As] 
+ (  -1.00000)    int2[Aq,a,a,b] kdelta[Ap,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[b,As] 
+ (  -1.00000)    int2[Aq,a,a,b] kdelta[Ap,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[b,Ar] 
+ (   2.00000)    int2[Aq,a,a,b] kdelta[Ap,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[b,Ar] 
+ (  -4.00000)    int2[Aq,a,b,a] kdelta[Ap,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[b,As] 
+ (   2.00000)    int2[Aq,a,b,a] kdelta[Ap,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[b,As] 
+ (   2.00000)    int2[Aq,a,b,a] kdelta[Ap,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E1[b,Ar] 
+ (  -4.00000)    int2[Aq,a,b,a] kdelta[Ap,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E1[b,Ar] 
+ (   2.00000)    int2[Ci,Ck,a,b] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Cj,Cl] E1[b,a] 
+ (  -1.00000)    int2[Ci,Ck,a,b] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Cj,Cl] E1[b,a] 
+ (  -1.00000)    int2[Ci,Cl,a,b] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Cj,Ck] E1[b,a] 
+ (   2.00000)    int2[Ci,Cl,a,b] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Cj,Ck] E1[b,a] 
+ (  -4.00000)    int2[Ci,a,Ck,b] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Cj,Cl] E1[a,b] 
+ (   2.00000)    int2[Ci,a,Ck,b] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Cj,Cl] E1[a,b] 
+ (   2.00000)    int2[Ci,a,Cl,b] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Cj,Ck] E1[a,b] 
+ (  -4.00000)    int2[Ci,a,Cl,b] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Cj,Ck] E1[a,b] 
+ (  -1.00000)    int2[Cj,Ck,a,b] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Ci,Cl] E1[b,a] 
+ (   2.00000)    int2[Cj,Ck,a,b] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Ci,Cl] E1[b,a] 
+ (   2.00000)    int2[Cj,Cl,a,b] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Ci,Ck] E1[b,a] 
+ (  -1.00000)    int2[Cj,Cl,a,b] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Ci,Ck] E1[b,a] 
+ (   2.00000)    int2[Cj,a,Ck,b] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Ci,Cl] E1[a,b] 
+ (  -4.00000)    int2[Cj,a,Ck,b] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Ci,Cl] E1[a,b] 
+ (  -4.00000)    int2[Cj,a,Cl,b] kdelta[Ap,Ar] kdelta[Aq,As] kdelta[Ci,Ck] E1[a,b] 
+ (   2.00000)    int2[Cj,a,Cl,b] kdelta[Ap,As] kdelta[Aq,Ar] kdelta[Ci,Ck] E1[a,b] 
+ (   1.00000)    int2[Ci,Cj,Ck,Cl] E2[Ap,Aq,Ar,As] 
+ (   1.00000)    int2[Ci,Cj,Cl,Ck] E2[Ap,Aq,As,Ar] 
+ (  -1.00000)    int1[Ci,Ck] kdelta[Cj,Cl] E2[Ap,Aq,Ar,As] 
+ (  -1.00000)    int1[Ci,Cl] kdelta[Cj,Ck] E2[Ap,Aq,As,Ar] 
+ (  -1.00000)    int1[Cj,Ck] kdelta[Ci,Cl] E2[Ap,Aq,As,Ar] 
+ (  -1.00000)    int1[Cj,Cl] kdelta[Ci,Ck] E2[Ap,Aq,Ar,As] 
+ (  -1.00000)    int2[Ap,Ci,a,Ck] kdelta[Cj,Cl] E2[Aq,a,As,Ar] 
+ (  -1.00000)    int2[Ap,Ci,a,Cl] kdelta[Cj,Ck] E2[Aq,a,Ar,As] 
+ (  -1.00000)    int2[Ap,Cj,a,Ck] kdelta[Ci,Cl] E2[Aq,a,Ar,As] 
+ (  -1.00000)    int2[Ap,Cj,a,Cl] kdelta[Ci,Ck] E2[Aq,a,As,Ar] 
+ (   2.00000)    int2[Ap,Ck,Ci,a] kdelta[Cj,Cl] E2[Aq,a,As,Ar] 
+ (  -1.00000)    int2[Ap,Ck,Cj,a] kdelta[Ci,Cl] E2[Aq,a,As,Ar] 
+ (   2.00000)    int2[Ap,Cl,Ci,a] kdelta[Cj,Ck] E2[Aq,a,Ar,As] 
+ (  -1.00000)    int2[Ap,Cl,Cj,a] kdelta[Ci,Ck] E2[Aq,a,Ar,As] 
+ (  -1.00000)    int2[Aq,Ci,a,Ck] kdelta[Cj,Cl] E2[Ap,a,Ar,As] 
+ (  -1.00000)    int2[Aq,Ci,a,Cl] kdelta[Cj,Ck] E2[Ap,a,As,Ar] 
+ (  -1.00000)    int2[Aq,Cj,a,Ck] kdelta[Ci,Cl] E2[Ap,a,As,Ar] 
+ (  -1.00000)    int2[Aq,Cj,a,Cl] kdelta[Ci,Ck] E2[Ap,a,Ar,As] 
+ (  -1.00000)    int2[Aq,Ck,Ci,a] kdelta[Cj,Cl] E2[Ap,a,As,Ar] 
+ (   2.00000)    int2[Aq,Ck,Cj,a] kdelta[Ci,Cl] E2[Ap,a,As,Ar] 
+ (  -1.00000)    int2[Aq,Cl,Ci,a] kdelta[Cj,Ck] E2[Ap,a,Ar,As] 
+ (   2.00000)    int2[Aq,Cl,Cj,a] kdelta[Ci,Ck] E2[Ap,a,Ar,As] 
+ (   2.00000)    int2[Ar,Ci,Ck,a] kdelta[Cj,Cl] E2[Ap,Aq,a,As] 
+ (  -1.00000)    int2[Ar,Ci,Cl,a] kdelta[Cj,Ck] E2[Ap,Aq,a,As] 
+ (  -1.00000)    int2[Ar,Ci,a,Ck] kdelta[Cj,Cl] E2[Ap,Aq,a,As] 
+ (  -1.00000)    int2[Ar,Ci,a,Cl] kdelta[Cj,Ck] E2[Ap,Aq,As,a] 
+ (   2.00000)    int2[Ar,Cj,Ck,a] kdelta[Ci,Cl] E2[Ap,Aq,As,a] 
+ (  -1.00000)    int2[Ar,Cj,Cl,a] kdelta[Ci,Ck] E2[Ap,Aq,As,a] 
+ (  -1.00000)    int2[Ar,Cj,a,Ck] kdelta[Ci,Cl] E2[Ap,Aq,As,a] 
+ (  -1.00000)    int2[Ar,Cj,a,Cl] kdelta[Ci,Ck] E2[Ap,Aq,a,As] 
+ (  -1.00000)    int2[As,Ci,Ck,a] kdelta[Cj,Cl] E2[Ap,Aq,a,Ar] 
+ (   2.00000)    int2[As,Ci,Cl,a] kdelta[Cj,Ck] E2[Ap,Aq,a,Ar] 
+ (  -1.00000)    int2[As,Ci,a,Ck] kdelta[Cj,Cl] E2[Ap,Aq,Ar,a] 
+ (  -1.00000)    int2[As,Ci,a,Cl] kdelta[Cj,Ck] E2[Ap,Aq,a,Ar] 
+ (  -1.00000)    int2[As,Cj,Ck,a] kdelta[Ci,Cl] E2[Ap,Aq,Ar,a] 
+ (   2.00000)    int2[As,Cj,Cl,a] kdelta[Ci,Ck] E2[Ap,Aq,Ar,a] 
+ (  -1.00000)    int2[As,Cj,a,Ck] kdelta[Ci,Cl] E2[Ap,Aq,a,Ar] 
+ (  -1.00000)    int2[As,Cj,a,Cl] kdelta[Ci,Ck] E2[Ap,Aq,Ar,a] 
+ (   1.00000)    int2[Ci,Ck,a,a] kdelta[Cj,Cl] E2[Ap,Aq,Ar,As] 
+ (   1.00000)    int2[Ci,Cl,a,a] kdelta[Cj,Ck] E2[Ap,Aq,As,Ar] 
+ (  -2.00000)    int2[Ci,a,Ck,a] kdelta[Cj,Cl] E2[Ap,Aq,Ar,As] 
+ (  -2.00000)    int2[Ci,a,Cl,a] kdelta[Cj,Ck] E2[Ap,Aq,As,Ar] 
+ (   1.00000)    int2[Cj,Ck,a,a] kdelta[Ci,Cl] E2[Ap,Aq,As,Ar] 
+ (   1.00000)    int2[Cj,Cl,a,a] kdelta[Ci,Ck] E2[Ap,Aq,Ar,As] 
+ (  -2.00000)    int2[Cj,a,Ck,a] kdelta[Ci,Cl] E2[Ap,Aq,As,Ar] 
+ (  -2.00000)    int2[Cj,a,Cl,a] kdelta[Ci,Ck] E2[Ap,Aq,Ar,As] 
+ (   1.00000)    int1[Ap,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Aq,a,As,Ar] 
+ (   1.00000)    int1[Ap,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Aq,a,Ar,As] 
+ (   1.00000)    int1[Aq,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Ap,a,Ar,As] 
+ (   1.00000)    int1[Aq,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Ap,a,As,Ar] 
+ (   1.00000)    int2[Ap,Aq,a,b] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[a,b,Ar,As] 
+ (   1.00000)    int2[Ap,Aq,a,b] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[a,b,As,Ar] 
+ (   1.00000)    int2[Ap,Ar,a,b] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Aq,a,As,b] 
+ (   1.00000)    int2[Ap,Ar,a,b] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Aq,a,b,As] 
+ (   1.00000)    int2[Ap,As,a,b] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Aq,a,b,Ar] 
+ (   1.00000)    int2[Ap,As,a,b] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Aq,a,Ar,b] 
+ (  -2.00000)    int2[Ap,a,Ar,b] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Aq,a,As,b] 
+ (   1.00000)    int2[Ap,a,Ar,b] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Aq,a,As,b] 
+ (   1.00000)    int2[Ap,a,As,b] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Aq,a,Ar,b] 
+ (  -2.00000)    int2[Ap,a,As,b] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Aq,a,Ar,b] 
+ (  -1.00000)    int2[Ap,a,a,b] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Aq,b,As,Ar] 
+ (  -1.00000)    int2[Ap,a,a,b] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Aq,b,Ar,As] 
+ (   2.00000)    int2[Ap,a,b,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Aq,b,As,Ar] 
+ (   2.00000)    int2[Ap,a,b,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Aq,b,Ar,As] 
+ (   1.00000)    int2[Aq,Ar,a,b] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Ap,a,b,As] 
+ (   1.00000)    int2[Aq,Ar,a,b] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Ap,a,As,b] 
+ (   1.00000)    int2[Aq,As,a,b] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Ap,a,Ar,b] 
+ (   1.00000)    int2[Aq,As,a,b] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Ap,a,b,Ar] 
+ (   1.00000)    int2[Aq,a,Ar,b] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Ap,a,As,b] 
+ (  -2.00000)    int2[Aq,a,Ar,b] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Ap,a,As,b] 
+ (  -2.00000)    int2[Aq,a,As,b] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Ap,a,Ar,b] 
+ (   1.00000)    int2[Aq,a,As,b] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Ap,a,Ar,b] 
+ (  -1.00000)    int2[Aq,a,a,b] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Ap,b,Ar,As] 
+ (  -1.00000)    int2[Aq,a,a,b] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Ap,b,As,Ar] 
+ (   2.00000)    int2[Aq,a,b,a] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[Ap,b,Ar,As] 
+ (   2.00000)    int2[Aq,a,b,a] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[Ap,b,As,Ar] 
+ (  -1.00000)    int2[Ci,Ck,a,b] kdelta[Ap,Ar] kdelta[Cj,Cl] E2[Aq,b,As,a] 
+ (  -1.00000)    int2[Ci,Ck,a,b] kdelta[Ap,As] kdelta[Cj,Cl] E2[Aq,b,a,Ar] 
+ (  -1.00000)    int2[Ci,Ck,a,b] kdelta[Aq,Ar] kdelta[Cj,Cl] E2[Ap,b,a,As] 
+ (   2.00000)    int2[Ci,Ck,a,b] kdelta[Aq,As] kdelta[Cj,Cl] E2[Ap,b,a,Ar] 
+ (  -1.00000)    int2[Ci,Cl,a,b] kdelta[Ap,Ar] kdelta[Cj,Ck] E2[Aq,b,a,As] 
+ (  -1.00000)    int2[Ci,Cl,a,b] kdelta[Ap,As] kdelta[Cj,Ck] E2[Aq,b,Ar,a] 
+ (   2.00000)    int2[Ci,Cl,a,b] kdelta[Aq,Ar] kdelta[Cj,Ck] E2[Ap,b,a,As] 
+ (  -1.00000)    int2[Ci,Cl,a,b] kdelta[Aq,As] kdelta[Cj,Ck] E2[Ap,b,a,Ar] 
+ (   2.00000)    int2[Ci,a,Ck,b] kdelta[Ap,Ar] kdelta[Cj,Cl] E2[Aq,a,As,b] 
+ (  -1.00000)    int2[Ci,a,Ck,b] kdelta[Ap,As] kdelta[Cj,Cl] E2[Aq,a,Ar,b] 
+ (  -1.00000)    int2[Ci,a,Ck,b] kdelta[Aq,Ar] kdelta[Cj,Cl] E2[Ap,a,As,b] 
+ (   2.00000)    int2[Ci,a,Ck,b] kdelta[Aq,As] kdelta[Cj,Cl] E2[Ap,a,Ar,b] 
+ (  -1.00000)    int2[Ci,a,Cl,b] kdelta[Ap,Ar] kdelta[Cj,Ck] E2[Aq,a,As,b] 
+ (   2.00000)    int2[Ci,a,Cl,b] kdelta[Ap,As] kdelta[Cj,Ck] E2[Aq,a,Ar,b] 
+ (   2.00000)    int2[Ci,a,Cl,b] kdelta[Aq,Ar] kdelta[Cj,Ck] E2[Ap,a,As,b] 
+ (  -1.00000)    int2[Ci,a,Cl,b] kdelta[Aq,As] kdelta[Cj,Ck] E2[Ap,a,Ar,b] 
+ (  -1.00000)    int2[Cj,Ck,a,b] kdelta[Ap,Ar] kdelta[Ci,Cl] E2[Aq,b,a,As] 
+ (   2.00000)    int2[Cj,Ck,a,b] kdelta[Ap,As] kdelta[Ci,Cl] E2[Aq,b,a,Ar] 
+ (  -1.00000)    int2[Cj,Ck,a,b] kdelta[Aq,Ar] kdelta[Ci,Cl] E2[Ap,b,As,a] 
+ (  -1.00000)    int2[Cj,Ck,a,b] kdelta[Aq,As] kdelta[Ci,Cl] E2[Ap,b,a,Ar] 
+ (   2.00000)    int2[Cj,Cl,a,b] kdelta[Ap,Ar] kdelta[Ci,Ck] E2[Aq,b,a,As] 
+ (  -1.00000)    int2[Cj,Cl,a,b] kdelta[Ap,As] kdelta[Ci,Ck] E2[Aq,b,a,Ar] 
+ (  -1.00000)    int2[Cj,Cl,a,b] kdelta[Aq,Ar] kdelta[Ci,Ck] E2[Ap,b,a,As] 
+ (  -1.00000)    int2[Cj,Cl,a,b] kdelta[Aq,As] kdelta[Ci,Ck] E2[Ap,b,Ar,a] 
+ (  -1.00000)    int2[Cj,a,Ck,b] kdelta[Ap,Ar] kdelta[Ci,Cl] E2[Aq,a,As,b] 
+ (   2.00000)    int2[Cj,a,Ck,b] kdelta[Ap,As] kdelta[Ci,Cl] E2[Aq,a,Ar,b] 
+ (   2.00000)    int2[Cj,a,Ck,b] kdelta[Aq,Ar] kdelta[Ci,Cl] E2[Ap,a,As,b] 
+ (  -1.00000)    int2[Cj,a,Ck,b] kdelta[Aq,As] kdelta[Ci,Cl] E2[Ap,a,Ar,b] 
+ (   2.00000)    int2[Cj,a,Cl,b] kdelta[Ap,Ar] kdelta[Ci,Ck] E2[Aq,a,As,b] 
+ (  -1.00000)    int2[Cj,a,Cl,b] kdelta[Ap,As] kdelta[Ci,Ck] E2[Aq,a,Ar,b] 
+ (  -1.00000)    int2[Cj,a,Cl,b] kdelta[Aq,Ar] kdelta[Ci,Ck] E2[Ap,a,As,b] 
+ (   2.00000)    int2[Cj,a,Cl,b] kdelta[Aq,As] kdelta[Ci,Ck] E2[Ap,a,Ar,b] 
+ (   1.00000)    int2[Ap,a,b,c] kdelta[Aq,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[a,b,c,As] 
+ (  -2.00000)    int2[Ap,a,b,c] kdelta[Aq,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[a,b,c,As] 
+ (  -2.00000)    int2[Ap,a,b,c] kdelta[Aq,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[a,b,c,Ar] 
+ (   1.00000)    int2[Ap,a,b,c] kdelta[Aq,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[a,b,c,Ar] 
+ (  -2.00000)    int2[Aq,a,b,c] kdelta[Ap,Ar] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[a,b,c,As] 
+ (   1.00000)    int2[Aq,a,b,c] kdelta[Ap,Ar] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[a,b,c,As] 
+ (   1.00000)    int2[Aq,a,b,c] kdelta[Ap,As] kdelta[Ci,Ck] kdelta[Cj,Cl] E2[a,b,c,Ar] 
+ (  -2.00000)    int2[Aq,a,b,c] kdelta[Ap,As] kdelta[Ci,Cl] kdelta[Cj,Ck] E2[a,b,c,Ar] 
+ (  -1.00000)    int2[Ci,Ck,a,b] kdelta[Cj,Cl] E3[Ap,Aq,b,a,As,Ar] 
+ (  -1.00000)    int2[Ci,Cl,a,b] kdelta[Cj,Ck] E3[Ap,Aq,b,a,Ar,As] 
+ (  -1.00000)    int2[Ci,a,Ck,b] kdelta[Cj,Cl] E3[Ap,Aq,a,Ar,As,b] 
+ (  -1.00000)    int2[Ci,a,Cl,b] kdelta[Cj,Ck] E3[Ap,Aq,a,As,Ar,b] 
+ (  -1.00000)    int2[Cj,Ck,a,b] kdelta[Ci,Cl] E3[Ap,Aq,b,As,a,Ar] 
+ (  -1.00000)    int2[Cj,Cl,a,b] kdelta[Ci,Ck] E3[Ap,Aq,b,Ar,a,As] 
+ (  -1.00000)    int2[Cj,a,Ck,b] kdelta[Ci,Cl] E3[Ap,Aq,a,As,Ar,b] 
+ (  -1.00000)    int2[Cj,a,Cl,b] kdelta[Ci,Ck] E3[Ap,Aq,a,Ar,As,b] 
+ (   1.00000)    int2[Ap,a,b,c] kdelta[Ci,Ck] kdelta[Cj,Cl] E3[Aq,a,b,As,c,Ar] 
+ (   1.00000)    int2[Ap,a,b,c] kdelta[Ci,Cl] kdelta[Cj,Ck] E3[Aq,a,b,Ar,c,As] 
+ (   1.00000)    int2[Aq,a,b,c] kdelta[Ci,Ck] kdelta[Cj,Cl] E3[Ap,a,b,Ar,c,As] 
+ (   1.00000)    int2[Aq,a,b,c] kdelta[Ci,Cl] kdelta[Cj,Ck] E3[Ap,a,b,As,c,Ar] 
+
+
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (4.0) *numpy.einsum( 'PQRS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PQRS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PQSR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (4.0) *numpy.einsum( 'PQSR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (8.0) *numpy.einsum( 'PR ,PS -> RS'  , int2[ncore:nc,ncore:nc,Ci,Ck] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PR ,PS -> RS'  , int2[ncore:nc,ncore:nc,Ci,Cl] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PR ,PS -> RS'  , int2[ncore:nc,ncore:nc,Cj,Ck] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'PR ,PS -> RS'  , int2[ncore:nc,ncore:nc,Cj,Cl] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PS ,PR -> RS'  , int2[ncore:nc,ncore:nc,Ci,Ck] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (8.0) *numpy.einsum( 'PS ,PR -> RS'  , int2[ncore:nc,ncore:nc,Ci,Cl] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'PS ,PR -> RS'  , int2[ncore:nc,ncore:nc,Cj,Ck] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PS ,PR -> RS'  , int2[ncore:nc,ncore:nc,Cj,Cl] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PR ,PS -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'PR ,PS -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'PS ,PR -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PS ,PR -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'PR ,PS -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PR ,PS -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PS ,PR -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'PS ,PR -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QR ,SQ -> RS'  , int2[ncore:nc,ncore:nc,Ci,Ck] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'QR ,SQ -> RS'  , int2[ncore:nc,ncore:nc,Ci,Cl] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (8.0) *numpy.einsum( 'QR ,SQ -> RS'  , int2[ncore:nc,ncore:nc,Cj,Ck] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QR ,SQ -> RS'  , int2[ncore:nc,ncore:nc,Cj,Cl] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'QS ,RQ -> RS'  , int2[ncore:nc,ncore:nc,Ci,Ck] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QS ,RQ -> RS'  , int2[ncore:nc,ncore:nc,Ci,Cl] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QS ,RQ -> RS'  , int2[ncore:nc,ncore:nc,Cj,Ck] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (8.0) *numpy.einsum( 'QS ,RQ -> RS'  , int2[ncore:nc,ncore:nc,Cj,Cl] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'QR ,SQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QR ,SQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QS ,RQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'QS ,RQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QR ,SQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'QR ,SQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'QS ,RQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QS ,RQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] ,  Cin)
+	Cout +=  (4.0) *numpy.einsum( ' ,RS -> RS'  , int2[Ci,Cj,Ck,Cl] ,  Cin)
+	Cout +=  (-2.0) *numpy.einsum( ' ,SR -> RS'  , int2[Ci,Cj,Ck,Cl] ,  Cin)
+	Cout +=  (-2.0) *numpy.einsum( ' ,RS -> RS'  , int2[Ci,Cj,Cl,Ck] ,  Cin)
+	Cout +=  (4.0) *numpy.einsum( ' ,SR -> RS'  , int2[Ci,Cj,Cl,Ck] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (4.0) *numpy.einsum( 'PR ,PS -> RS'  , int1[ncore:nc,ncore:nc] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PR ,PS -> RS'  , int1[ncore:nc,ncore:nc] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PS ,PR -> RS'  , int1[ncore:nc,ncore:nc] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (4.0) *numpy.einsum( 'PS ,PR -> RS'  , int1[ncore:nc,ncore:nc] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'QR ,SQ -> RS'  , int1[ncore:nc,ncore:nc] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (4.0) *numpy.einsum( 'QR ,SQ -> RS'  , int1[ncore:nc,ncore:nc] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (4.0) *numpy.einsum( 'QS ,RQ -> RS'  , int1[ncore:nc,ncore:nc] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'QS ,RQ -> RS'  , int1[ncore:nc,ncore:nc] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( ' ,RS -> RS'  , int1[Ci,Ck] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( ' ,SR -> RS'  , int1[Ci,Ck] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( ' ,RS -> RS'  , int1[Ci,Cl] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( ' ,SR -> RS'  , int1[Ci,Cl] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( ' ,RS -> RS'  , int1[Cj,Ck] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( ' ,SR -> RS'  , int1[Cj,Ck] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( ' ,RS -> RS'  , int1[Cj,Cl] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( ' ,SR -> RS'  , int1[Cj,Cl] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PRaa ,PS -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'PRaa ,PS -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'PSaa ,PR -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PSaa ,PR -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (8.0) *numpy.einsum( 'PaRa ,PS -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PaRa ,PS -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PaSa ,PR -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (8.0) *numpy.einsum( 'PaSa ,PR -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'QRaa ,SQ -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QRaa ,SQ -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QSaa ,RQ -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'QSaa ,RQ -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QaRa ,SQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (8.0) *numpy.einsum( 'QaRa ,SQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (8.0) *numpy.einsum( 'QaSa ,RQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QaSa ,RQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,RS -> RS'  , int2[Ci,Ck,:ncore,:ncore] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,SR -> RS'  , int2[Ci,Ck,:ncore,:ncore] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,RS -> RS'  , int2[Ci,Cl,:ncore,:ncore] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,SR -> RS'  , int2[Ci,Cl,:ncore,:ncore] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-8.0) *numpy.einsum( 'aa ,RS -> RS'  , int2[Ci,:ncore,Ck,:ncore] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,SR -> RS'  , int2[Ci,:ncore,Ck,:ncore] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,RS -> RS'  , int2[Ci,:ncore,Cl,:ncore] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-8.0) *numpy.einsum( 'aa ,SR -> RS'  , int2[Ci,:ncore,Cl,:ncore] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,RS -> RS'  , int2[Cj,Ck,:ncore,:ncore] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,SR -> RS'  , int2[Cj,Ck,:ncore,:ncore] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,RS -> RS'  , int2[Cj,Cl,:ncore,:ncore] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,SR -> RS'  , int2[Cj,Cl,:ncore,:ncore] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,RS -> RS'  , int2[Cj,:ncore,Ck,:ncore] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-8.0) *numpy.einsum( 'aa ,SR -> RS'  , int2[Cj,:ncore,Ck,:ncore] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-8.0) *numpy.einsum( 'aa ,RS -> RS'  , int2[Cj,:ncore,Cl,:ncore] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,SR -> RS'  , int2[Cj,:ncore,Cl,:ncore] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PR ,QS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Ci,Ck] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'PR ,QS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Ci,Cl] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'PR ,QS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Cj,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'PR ,QS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Cj,Cl] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'PS ,QR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Ci,Ck] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PS ,QR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Ci,Cl] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'PS ,QR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Cj,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'PS ,QR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Cj,Cl] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'PR ,QS ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'PR ,QS ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'PS ,QR ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'PS ,QR ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'PR ,QS ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'PR ,QS ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'PS ,QR ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'PS ,QR ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'QR ,PS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Ci,Ck] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'QR ,PS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Ci,Cl] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QR ,PS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Cj,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'QR ,PS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Cj,Cl] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'QS ,PR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Ci,Ck] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'QS ,PR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Ci,Cl] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'QS ,PR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Cj,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QS ,PR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,Cj,Cl] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'QR ,PS ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'QR ,PS ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'QS ,PR ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'QS ,PR ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'QR ,PS ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'QR ,PS ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'QS ,PR ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'QS ,PR ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	Cout +=  (-2.0) *numpy.einsum( ' ,QS ,RQ -> RS'  , int2[Ci,Cj,Ck,Cl] , E1[:,:] ,  Cin)
+	Cout +=  (1.0) *numpy.einsum( ' ,QR ,SQ -> RS'  , int2[Ci,Cj,Ck,Cl] , E1[:,:] ,  Cin)
+	Cout +=  (1.0) *numpy.einsum( ' ,PS ,PR -> RS'  , int2[Ci,Cj,Ck,Cl] , E1[:,:] ,  Cin)
+	Cout +=  (-2.0) *numpy.einsum( ' ,PR ,PS -> RS'  , int2[Ci,Cj,Ck,Cl] , E1[:,:] ,  Cin)
+	Cout +=  (1.0) *numpy.einsum( ' ,QS ,RQ -> RS'  , int2[Ci,Cj,Cl,Ck] , E1[:,:] ,  Cin)
+	Cout +=  (-2.0) *numpy.einsum( ' ,QR ,SQ -> RS'  , int2[Ci,Cj,Cl,Ck] , E1[:,:] ,  Cin)
+	Cout +=  (-2.0) *numpy.einsum( ' ,PS ,PR -> RS'  , int2[Ci,Cj,Cl,Ck] , E1[:,:] ,  Cin)
+	Cout +=  (1.0) *numpy.einsum( ' ,PR ,PS -> RS'  , int2[Ci,Cj,Cl,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PR ,QS ,PQ -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'PR ,QS ,PQ -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'PS ,QR ,PQ -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PS ,QR ,PQ -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'QR ,PS ,PQ -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'QR ,PS ,PQ -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'QS ,PR ,PQ -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'QS ,PR ,PQ -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( ' ,QS ,RQ -> RS'  , int1[Ci,Ck] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( ' ,QR ,SQ -> RS'  , int1[Ci,Ck] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( ' ,PS ,PR -> RS'  , int1[Ci,Ck] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( ' ,PR ,PS -> RS'  , int1[Ci,Ck] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( ' ,QS ,RQ -> RS'  , int1[Ci,Cl] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( ' ,QR ,SQ -> RS'  , int1[Ci,Cl] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( ' ,PS ,PR -> RS'  , int1[Ci,Cl] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( ' ,PR ,PS -> RS'  , int1[Ci,Cl] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( ' ,QS ,RQ -> RS'  , int1[Cj,Ck] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( ' ,QR ,SQ -> RS'  , int1[Cj,Ck] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( ' ,PS ,PR -> RS'  , int1[Cj,Ck] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( ' ,PR ,PS -> RS'  , int1[Cj,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( ' ,QS ,RQ -> RS'  , int1[Cj,Cl] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( ' ,QR ,SQ -> RS'  , int1[Cj,Cl] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( ' ,PS ,PR -> RS'  , int1[Cj,Cl] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( ' ,PR ,PS -> RS'  , int1[Cj,Cl] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PQRa ,aS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'PQRa ,aS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'PQSa ,aR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PQSa ,aR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'PQaR ,aS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PQaR ,aS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PQaS ,aR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'PQaS ,aR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'PRSa ,Qa ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PRSa ,Qa ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'PRaa ,QS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'PRaa ,QS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PSRa ,Qa ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'PSRa ,Qa ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'PSaa ,QR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'PSaa ,QR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Pa ,aS ,PR -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Pa ,aR ,PS -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Pa ,aS ,PR -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Pa ,aR ,PS -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Pa ,aS ,PR -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Pa ,aR ,PS -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Pa ,aS ,PR -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Pa ,aR ,PS -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Pa ,aS ,PR -> RS'  , int2[ncore:nc,Ck,Ci,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'Pa ,aR ,PS -> RS'  , int2[ncore:nc,Ck,Ci,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Pa ,aS ,PR -> RS'  , int2[ncore:nc,Ck,Cj,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Pa ,aR ,PS -> RS'  , int2[ncore:nc,Ck,Cj,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'Pa ,aS ,PR -> RS'  , int2[ncore:nc,Cl,Ci,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Pa ,aR ,PS -> RS'  , int2[ncore:nc,Cl,Ci,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Pa ,aS ,PR -> RS'  , int2[ncore:nc,Cl,Cj,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Pa ,aR ,PS -> RS'  , int2[ncore:nc,Cl,Cj,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PaRa ,QS ,PQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'PaRa ,QS ,PQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'PaSa ,QR ,PQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'PaSa ,QR ,PQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'QRSa ,Pa ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'QRSa ,Pa ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'QRaa ,PS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'QRaa ,PS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'QSRa ,Pa ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'QSRa ,Pa ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'QSaa ,PR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'QSaa ,PR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qa ,aS ,RQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qa ,aR ,SQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qa ,aS ,RQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qa ,aR ,SQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qa ,aS ,RQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qa ,aR ,SQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qa ,aS ,RQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qa ,aR ,SQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qa ,aS ,RQ -> RS'  , int2[ncore:nc,Ck,Ci,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qa ,aR ,SQ -> RS'  , int2[ncore:nc,Ck,Ci,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qa ,aS ,RQ -> RS'  , int2[ncore:nc,Ck,Cj,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'Qa ,aR ,SQ -> RS'  , int2[ncore:nc,Ck,Cj,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qa ,aS ,RQ -> RS'  , int2[ncore:nc,Cl,Ci,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qa ,aR ,SQ -> RS'  , int2[ncore:nc,Cl,Ci,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'Qa ,aS ,RQ -> RS'  , int2[ncore:nc,Cl,Cj,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qa ,aR ,SQ -> RS'  , int2[ncore:nc,Cl,Cj,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'QaRa ,PS ,PQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QaRa ,PS ,PQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'QaSa ,PR ,PQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'QaSa ,PR ,PQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Ra ,Qa ,SQ -> RS'  , int2[ncore:nc,Ci,Ck,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'Ra ,Pa ,PS -> RS'  , int2[ncore:nc,Ci,Ck,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Ra ,Qa ,SQ -> RS'  , int2[ncore:nc,Ci,Cl,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Ra ,Pa ,PS -> RS'  , int2[ncore:nc,Ci,Cl,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Ra ,Qa ,SQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Ra ,Pa ,PS -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Ra ,Qa ,SQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Ra ,Pa ,PS -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'Ra ,Qa ,SQ -> RS'  , int2[ncore:nc,Cj,Ck,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Ra ,Pa ,PS -> RS'  , int2[ncore:nc,Cj,Ck,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Ra ,Qa ,SQ -> RS'  , int2[ncore:nc,Cj,Cl,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Ra ,Pa ,PS -> RS'  , int2[ncore:nc,Cj,Cl,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Ra ,Qa ,SQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Ra ,Pa ,PS -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Ra ,Qa ,SQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Ra ,Pa ,PS -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Sa ,Qa ,RQ -> RS'  , int2[ncore:nc,Ci,Ck,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Sa ,Pa ,PR -> RS'  , int2[ncore:nc,Ci,Ck,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Sa ,Qa ,RQ -> RS'  , int2[ncore:nc,Ci,Cl,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'Sa ,Pa ,PR -> RS'  , int2[ncore:nc,Ci,Cl,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Sa ,Qa ,RQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Sa ,Pa ,PR -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Sa ,Qa ,RQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Sa ,Pa ,PR -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Sa ,Qa ,RQ -> RS'  , int2[ncore:nc,Cj,Ck,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Sa ,Pa ,PR -> RS'  , int2[ncore:nc,Cj,Ck,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'Sa ,Qa ,RQ -> RS'  , int2[ncore:nc,Cj,Cl,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Sa ,Pa ,PR -> RS'  , int2[ncore:nc,Cj,Cl,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Sa ,Qa ,RQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Sa ,Pa ,PR -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Sa ,Qa ,RQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Sa ,Pa ,PR -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,QS ,RQ -> RS'  , int2[Ci,Ck,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'aa ,QR ,SQ -> RS'  , int2[Ci,Ck,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'aa ,PS ,PR -> RS'  , int2[Ci,Ck,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,PR ,PS -> RS'  , int2[Ci,Ck,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'aa ,QS ,RQ -> RS'  , int2[Ci,Cl,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,QR ,SQ -> RS'  , int2[Ci,Cl,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,PS ,PR -> RS'  , int2[Ci,Cl,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'aa ,PR ,PS -> RS'  , int2[Ci,Cl,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,QS ,RQ -> RS'  , int2[Ci,:ncore,Ck,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,QR ,SQ -> RS'  , int2[Ci,:ncore,Ck,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,PS ,PR -> RS'  , int2[Ci,:ncore,Ck,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,PR ,PS -> RS'  , int2[Ci,:ncore,Ck,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,QS ,RQ -> RS'  , int2[Ci,:ncore,Cl,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,QR ,SQ -> RS'  , int2[Ci,:ncore,Cl,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,PS ,PR -> RS'  , int2[Ci,:ncore,Cl,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,PR ,PS -> RS'  , int2[Ci,:ncore,Cl,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'aa ,QS ,RQ -> RS'  , int2[Cj,Ck,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,QR ,SQ -> RS'  , int2[Cj,Ck,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,PS ,PR -> RS'  , int2[Cj,Ck,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'aa ,PR ,PS -> RS'  , int2[Cj,Ck,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,QS ,RQ -> RS'  , int2[Cj,Cl,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'aa ,QR ,SQ -> RS'  , int2[Cj,Cl,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'aa ,PS ,PR -> RS'  , int2[Cj,Cl,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,PR ,PS -> RS'  , int2[Cj,Cl,:ncore,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,QS ,RQ -> RS'  , int2[Cj,:ncore,Ck,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,QR ,SQ -> RS'  , int2[Cj,:ncore,Ck,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,PS ,PR -> RS'  , int2[Cj,:ncore,Ck,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,PR ,PS -> RS'  , int2[Cj,:ncore,Ck,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,QS ,RQ -> RS'  , int2[Cj,:ncore,Cl,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,QR ,SQ -> RS'  , int2[Cj,:ncore,Cl,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,PS ,PR -> RS'  , int2[Cj,:ncore,Cl,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (4.0) *numpy.einsum( 'aa ,PR ,PS -> RS'  , int2[Cj,:ncore,Cl,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'Pa ,aS ,PR -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'Pa ,aS ,PR -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'Pa ,aR ,PS -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'Pa ,aR ,PS -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'Qa ,aS ,RQ -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'Qa ,aS ,RQ -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'Qa ,aR ,SQ -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'Qa ,aR ,SQ -> RS'  , int1[ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PRab ,ab ,PS -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'PRab ,ab ,PS -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'PSab ,ab ,PR -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PSab ,ab ,PR -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (4.0) *numpy.einsum( 'PaRb ,ab ,PS -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PaRb ,ab ,PS -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PaSb ,ab ,PR -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (4.0) *numpy.einsum( 'PaSb ,ab ,PR -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Paab ,bS ,PR -> RS'  , int2[ncore:nc,:ncore,:ncore,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Paab ,bS ,PR -> RS'  , int2[ncore:nc,:ncore,:ncore,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Paab ,bR ,PS -> RS'  , int2[ncore:nc,:ncore,:ncore,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Paab ,bR ,PS -> RS'  , int2[ncore:nc,:ncore,:ncore,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Paba ,bS ,PR -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'Paba ,bS ,PR -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'Paba ,bR ,PS -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Paba ,bR ,PS -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'QRab ,ab ,SQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'QRab ,ab ,SQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'QSab ,ab ,RQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'QSab ,ab ,RQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'QaRb ,ab ,SQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (4.0) *numpy.einsum( 'QaRb ,ab ,SQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (4.0) *numpy.einsum( 'QaSb ,ab ,RQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'QaSb ,ab ,RQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qaab ,bS ,RQ -> RS'  , int2[ncore:nc,:ncore,:ncore,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qaab ,bS ,RQ -> RS'  , int2[ncore:nc,:ncore,:ncore,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qaab ,bR ,SQ -> RS'  , int2[ncore:nc,:ncore,:ncore,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qaab ,bR ,SQ -> RS'  , int2[ncore:nc,:ncore,:ncore,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'Qaba ,bS ,RQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qaba ,bS ,RQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qaba ,bR ,SQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'Qaba ,bR ,SQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,ba ,RS -> RS'  , int2[Ci,Ck,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,ba ,SR -> RS'  , int2[Ci,Ck,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,ba ,RS -> RS'  , int2[Ci,Cl,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,ba ,SR -> RS'  , int2[Ci,Cl,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'ab ,ab ,RS -> RS'  , int2[Ci,ncore:nc,Ck,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,ab ,SR -> RS'  , int2[Ci,ncore:nc,Ck,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,ab ,RS -> RS'  , int2[Ci,ncore:nc,Cl,ncore:nc] , E1[:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'ab ,ab ,SR -> RS'  , int2[Ci,ncore:nc,Cl,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,ba ,RS -> RS'  , int2[Cj,Ck,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,ba ,SR -> RS'  , int2[Cj,Ck,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,ba ,RS -> RS'  , int2[Cj,Cl,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,ba ,SR -> RS'  , int2[Cj,Cl,ncore:nc,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,ab ,RS -> RS'  , int2[Cj,ncore:nc,Ck,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-4.0) *numpy.einsum( 'ab ,ab ,SR -> RS'  , int2[Cj,ncore:nc,Ck,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-4.0) *numpy.einsum( 'ab ,ab ,RS -> RS'  , int2[Cj,ncore:nc,Cl,ncore:nc] , E1[:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,ab ,SR -> RS'  , int2[Cj,ncore:nc,Cl,ncore:nc] , E1[:,:] ,  Cin)
+	Cout +=  (1.0) *numpy.einsum( ' ,PQRS ,PQ -> RS'  , int2[Ci,Cj,Ck,Cl] , E2[:,:,:,:] ,  Cin)
+	Cout +=  (1.0) *numpy.einsum( ' ,PQSR ,PQ -> RS'  , int2[Ci,Cj,Cl,Ck] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( ' ,PQRS ,PQ -> RS'  , int1[Ci,Ck] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( ' ,PQSR ,PQ -> RS'  , int1[Ci,Cl] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( ' ,PQSR ,PQ -> RS'  , int1[Cj,Ck] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( ' ,PQRS ,PQ -> RS'  , int1[Cj,Cl] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Pa ,QaSR ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Pa ,QaRS ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Pa ,QaRS ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Pa ,QaSR ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Pa ,QaSR ,PQ -> RS'  , int2[ncore:nc,Ck,Ci,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Pa ,QaSR ,PQ -> RS'  , int2[ncore:nc,Ck,Cj,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Pa ,QaRS ,PQ -> RS'  , int2[ncore:nc,Cl,Ci,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Pa ,QaRS ,PQ -> RS'  , int2[ncore:nc,Cl,Cj,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qa ,PaRS ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qa ,PaSR ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qa ,PaSR ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qa ,PaRS ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qa ,PaSR ,PQ -> RS'  , int2[ncore:nc,Ck,Ci,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qa ,PaSR ,PQ -> RS'  , int2[ncore:nc,Ck,Cj,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qa ,PaRS ,PQ -> RS'  , int2[ncore:nc,Cl,Ci,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qa ,PaRS ,PQ -> RS'  , int2[ncore:nc,Cl,Cj,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Ra ,PQaS ,PQ -> RS'  , int2[ncore:nc,Ci,Ck,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Ra ,PQaS ,PQ -> RS'  , int2[ncore:nc,Ci,Cl,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Ra ,PQaS ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Ra ,PQSa ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Ra ,PQSa ,PQ -> RS'  , int2[ncore:nc,Cj,Ck,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Ra ,PQSa ,PQ -> RS'  , int2[ncore:nc,Cj,Cl,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Ra ,PQSa ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Ra ,PQaS ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Sa ,PQaR ,PQ -> RS'  , int2[ncore:nc,Ci,Ck,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Sa ,PQaR ,PQ -> RS'  , int2[ncore:nc,Ci,Cl,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Sa ,PQRa ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Ck] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Sa ,PQaR ,PQ -> RS'  , int2[ncore:nc,Ci,ncore:nc,Cl] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Sa ,PQRa ,PQ -> RS'  , int2[ncore:nc,Cj,Ck,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Sa ,PQRa ,PQ -> RS'  , int2[ncore:nc,Cj,Cl,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Sa ,PQaR ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Ck] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Sa ,PQRa ,PQ -> RS'  , int2[ncore:nc,Cj,ncore:nc,Cl] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'aa ,PQRS ,PQ -> RS'  , int2[Ci,Ck,:ncore,:ncore] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'aa ,PQSR ,PQ -> RS'  , int2[Ci,Cl,:ncore,:ncore] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,PQRS ,PQ -> RS'  , int2[Ci,:ncore,Ck,:ncore] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,PQSR ,PQ -> RS'  , int2[Ci,:ncore,Cl,:ncore] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'aa ,PQSR ,PQ -> RS'  , int2[Cj,Ck,:ncore,:ncore] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'aa ,PQRS ,PQ -> RS'  , int2[Cj,Cl,:ncore,:ncore] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,PQSR ,PQ -> RS'  , int2[Cj,:ncore,Ck,:ncore] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'aa ,PQRS ,PQ -> RS'  , int2[Cj,:ncore,Cl,:ncore] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'Pa ,QaSR ,PQ -> RS'  , int1[ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'Pa ,QaRS ,PQ -> RS'  , int1[ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'Qa ,PaRS ,PQ -> RS'  , int1[ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'Qa ,PaSR ,PQ -> RS'  , int1[ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'PQab ,abRS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'PQab ,abSR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'PRab ,QaSb ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'PRab ,QabS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'PSab ,QabR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'PSab ,QaRb ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PaRb ,QaSb ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'PaRb ,QaSb ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'PaSb ,QaRb ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'PaSb ,QaRb ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Paab ,QbSR ,PQ -> RS'  , int2[ncore:nc,:ncore,:ncore,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Paab ,QbRS ,PQ -> RS'  , int2[ncore:nc,:ncore,:ncore,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Paba ,QbSR ,PQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Paba ,QbRS ,PQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'QRab ,PabS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'QRab ,PaSb ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'QSab ,PaRb ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'QSab ,PabR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'QaRb ,PaSb ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'QaRb ,PaSb ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'QaSb ,PaRb ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'QaSb ,PaRb ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qaab ,PbRS ,PQ -> RS'  , int2[ncore:nc,:ncore,:ncore,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'Qaab ,PbSR ,PQ -> RS'  , int2[ncore:nc,:ncore,:ncore,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qaba ,PbRS ,PQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'Qaba ,PbSR ,PQ -> RS'  , int2[ncore:nc,:ncore,ncore:nc,:ncore] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,QbSa ,RQ -> RS'  , int2[Ci,Ck,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,QbaR ,SQ -> RS'  , int2[Ci,Ck,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PbaS ,PR -> RS'  , int2[Ci,Ck,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,PbaR ,PS -> RS'  , int2[Ci,Ck,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,QbaS ,RQ -> RS'  , int2[Ci,Cl,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,QbRa ,SQ -> RS'  , int2[Ci,Cl,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,PbaS ,PR -> RS'  , int2[Ci,Cl,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PbaR ,PS -> RS'  , int2[Ci,Cl,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,QaSb ,RQ -> RS'  , int2[Ci,ncore:nc,Ck,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,QaRb ,SQ -> RS'  , int2[Ci,ncore:nc,Ck,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PaSb ,PR -> RS'  , int2[Ci,ncore:nc,Ck,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,PaRb ,PS -> RS'  , int2[Ci,ncore:nc,Ck,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,QaSb ,RQ -> RS'  , int2[Ci,ncore:nc,Cl,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,QaRb ,SQ -> RS'  , int2[Ci,ncore:nc,Cl,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,PaSb ,PR -> RS'  , int2[Ci,ncore:nc,Cl,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PaRb ,PS -> RS'  , int2[Ci,ncore:nc,Cl,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,QbaS ,RQ -> RS'  , int2[Cj,Ck,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,QbaR ,SQ -> RS'  , int2[Cj,Ck,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PbSa ,PR -> RS'  , int2[Cj,Ck,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PbaR ,PS -> RS'  , int2[Cj,Ck,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,QbaS ,RQ -> RS'  , int2[Cj,Cl,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,QbaR ,SQ -> RS'  , int2[Cj,Cl,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PbaS ,PR -> RS'  , int2[Cj,Cl,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PbRa ,PS -> RS'  , int2[Cj,Cl,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,QaSb ,RQ -> RS'  , int2[Cj,ncore:nc,Ck,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,QaRb ,SQ -> RS'  , int2[Cj,ncore:nc,Ck,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,PaSb ,PR -> RS'  , int2[Cj,ncore:nc,Ck,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PaRb ,PS -> RS'  , int2[Cj,ncore:nc,Ck,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,QaSb ,RQ -> RS'  , int2[Cj,ncore:nc,Cl,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,QaRb ,SQ -> RS'  , int2[Cj,ncore:nc,Cl,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PaSb ,PR -> RS'  , int2[Cj,ncore:nc,Cl,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (2.0) *numpy.einsum( 'ab ,PaRb ,PS -> RS'  , int2[Cj,ncore:nc,Cl,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'Pabc ,abcS ,PR -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'Pabc ,abcS ,PR -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'Pabc ,abcR ,PS -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'Pabc ,abcR ,PS -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (-2.0) *numpy.einsum( 'Qabc ,abcS ,RQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'Qabc ,abcS ,RQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'Qabc ,abcR ,SQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (-2.0) *numpy.einsum( 'Qabc ,abcR ,SQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E2[:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PQbaSR ,PQ -> RS'  , int2[Ci,Ck,ncore:nc,ncore:nc] , E3[:,:,:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PQbaRS ,PQ -> RS'  , int2[Ci,Cl,ncore:nc,ncore:nc] , E3[:,:,:,:,:,:] ,  Cin)
+	if Cj == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PQaRSb ,PQ -> RS'  , int2[Ci,ncore:nc,Ck,ncore:nc] , E3[:,:,:,:,:,:] ,  Cin)
+	if Cj == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PQaSRb ,PQ -> RS'  , int2[Ci,ncore:nc,Cl,ncore:nc] , E3[:,:,:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PQbSaR ,PQ -> RS'  , int2[Cj,Ck,ncore:nc,ncore:nc] , E3[:,:,:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PQbRaS ,PQ -> RS'  , int2[Cj,Cl,ncore:nc,ncore:nc] , E3[:,:,:,:,:,:] ,  Cin)
+	if Ci == Cl  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PQaSRb ,PQ -> RS'  , int2[Cj,ncore:nc,Ck,ncore:nc] , E3[:,:,:,:,:,:] ,  Cin)
+	if Ci == Ck  : 
+		Cout +=  (-1.0) *numpy.einsum( 'ab ,PQaRSb ,PQ -> RS'  , int2[Cj,ncore:nc,Cl,ncore:nc] , E3[:,:,:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'Pabc ,QabScR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E3[:,:,:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'Pabc ,QabRcS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E3[:,:,:,:,:,:] ,  Cin)
+	if Ci == Ck and Cj == Cl  : 
+		Cout +=  (1.0) *numpy.einsum( 'Qabc ,PabRcS ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E3[:,:,:,:,:,:] ,  Cin)
+	if Ci == Cl and Cj == Ck  : 
+		Cout +=  (1.0) *numpy.einsum( 'Qabc ,PabScR ,PQ -> RS'  , int2[ncore:nc,ncore:nc,ncore:nc,ncore:nc] , E3[:,:,:,:,:,:] ,  Cin)

@@ -80,13 +80,13 @@ def WriteCode(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum = Fals
      for t in result:
         tensorString = ""
         ifstatement = "\tif "
-
+        
         tensorcopy = t.tensors
-        dontprint= []
+        dontprint(= [])
         indexKey = {'Va': 'Va', 'Vb' : 'Vb'}
         for i in range(len(tensorcopy)):
             tensor = tensorcopy[i]
-
+            
             #check the delta function
             if (tensor.name == "kdelta"):
                 dontprint.append(i)
@@ -104,7 +104,7 @@ def WriteCode(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum = Fals
 
                 else :
                     ifstatement += tensor.indices[0].name +" == " +tensor.indices[1].name + " and "
-
+  
         #start by printint the if statement
         outString = ""
         if (len(ifstatement) != 4) :
@@ -120,7 +120,7 @@ def WriteCode(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum = Fals
                         outString += tensor.indices[index].name[-1].capitalize()
                     elif len(tensor.indices[index].name) == 1:
                         outString += tensor.indices[index].name[0]
-                outString += " ,"
+                outString += " ," 
         outString += indexKey["Va"][-1].capitalize()+indexKey["Vb"][-1].capitalize()+" -> CD' "
 
         for i in range(len(tensorcopy)):
@@ -138,13 +138,13 @@ def WriteCode(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum = Fals
      for t in result:
         tensorString = ""
         ifstatement = "if"
-
+        
         tensorcopy = t.tensors
-        dontprint= []
+        dontprint(= [])
         indexKey = {'Va': 'Va', 'Vb' : 'Vb'}
         for i in range(len(tensorcopy)):
             tensor = tensorcopy[i]
-
+            
             #check the delta function
             if (tensor.name == "kdelta"):
                 dontprint.append(i)
@@ -161,7 +161,7 @@ def WriteCode(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum = Fals
                             replaceindex(t.tensors[j], tensor.indices[1].name, tensor.indices[0].name)
                 else :
                     ifstatement += tensor.name +" == " +tensor.name + " and"
-
+                    
         outString = ""
         if (len(ifstatement) != 2) :
             outString += ifstatement[:-3]+" : "
@@ -174,7 +174,7 @@ def WriteCode(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum = Fals
                         outString += tensor.indices[index].name[-1].capitalize()
                     else :
                         outString += tensor.indices[index].name[0]
-                outString += " ,"
+                outString += " ," 
         outString += indexKey["Va"][-1].capitalize()+indexKey["Vb"][-1].capitalize()+"PQ -> CDRS' "
         for i in range(len(tensorcopy)):
             tensor = tensorcopy[i]
@@ -189,13 +189,13 @@ def WriteCode_ccaa(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
      for t in result:
         tensorString = ""
         ifstatement = "\tif "
-
+        
         tensorcopy = t.tensors
-        dontprint= []
+        dontprint(= [])
         indexKey = {'Ap': 'Ap', 'Aq' : 'Aq'}
         for i in range(len(tensorcopy)):
             tensor = tensorcopy[i]
-
+            
             #check the delta function
             if (tensor.name == "kdelta"):
                 dontprint.append(i)
@@ -213,7 +213,7 @@ def WriteCode_ccaa(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
 
                 else :
                     ifstatement += tensor.indices[0].name +" == " +tensor.indices[1].name + " and "
-
+  
         #start by printint the if statement
         outString = ""
         if (len(ifstatement) != 4) :
@@ -231,7 +231,7 @@ def WriteCode_ccaa(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
                         outString += tensor.indices[index].name[-1].capitalize()
                     elif len(tensor.indices[index].name) == 1:
                         outString += tensor.indices[index].name[0]
-                outString += " ,"
+                outString += " ," 
         outString += indexKey["Ap"][-1].capitalize()+indexKey["Aq"][-1].capitalize()+" -> RS' "
 
         for i in range(len(tensorcopy)):
@@ -249,13 +249,13 @@ def WriteCode_ccaa(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
      for t in result:
         tensorString = ""
         ifstatement = "if"
-
+        
         tensorcopy = t.tensors
-        dontprint= []
+        dontprint(= [])
         indexKey = {'Va': 'Va', 'Vb' : 'Vb'}
         for i in range(len(tensorcopy)):
             tensor = tensorcopy[i]
-
+            
             #check the delta function
             if (tensor.name == "kdelta"):
                 dontprint.append(i)
@@ -272,7 +272,7 @@ def WriteCode_ccaa(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
                             replaceindex(t.tensors[j], tensor.indices[1].name, tensor.indices[0].name)
                 else :
                     ifstatement += tensor.name +" == " +tensor.name + " and"
-
+                    
         outString = ""
         if (len(ifstatement) != 2) :
             outString += ifstatement[:-3]+" : "
@@ -285,7 +285,7 @@ def WriteCode_ccaa(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
                         outString += tensor.indices[index].name[-1].capitalize()
                     else :
                         outString += tensor.indices[index].name[0]
-                outString += " ,"
+                outString += " ," 
         outString += indexKey["Va"][-1].capitalize()+indexKey["Vb"][-1].capitalize()+"PQ -> CDRS' "
         for i in range(len(tensorcopy)):
             tensor = tensorcopy[i]
@@ -299,13 +299,13 @@ def WriteCode_ccav(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
      for t in result:
         tensorString = ""
         ifstatement = "\tif "
-
+        
         tensorcopy = t.tensors
-        dontprint= []
+        dontprint(= [])
         indexKey = {'Ap': 'Ap', 'Va' : 'Va'}
         for i in range(len(tensorcopy)):
             tensor = tensorcopy[i]
-
+            
             #check the delta function
             if (tensor.name == "kdelta"):
                 dontprint.append(i)
@@ -323,7 +323,7 @@ def WriteCode_ccav(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
 
                 else :
                     ifstatement += tensor.indices[0].name +" == " +tensor.indices[1].name + " and "
-
+  
         #start by printint the if statement
         outString = ""
         if (len(ifstatement) != 4) :
@@ -341,7 +341,7 @@ def WriteCode_ccav(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
                         outString += tensor.indices[index].name[-1].capitalize()
                     elif len(tensor.indices[index].name) == 1:
                         outString += tensor.indices[index].name[0]
-                outString += " ,"
+                outString += " ," 
         outString += indexKey["Ap"][-1].capitalize()+indexKey["Va"][-1].capitalize()+" -> QB' "
 
         for i in range(len(tensorcopy)):
@@ -359,13 +359,13 @@ def WriteCode_ccav(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
      for t in result:
         tensorString = ""
         ifstatement = "if"
-
+        
         tensorcopy = t.tensors
-        dontprint= []
+        dontprint(= [])
         indexKey = {'Va': 'Va', 'Vb' : 'Vb'}
         for i in range(len(tensorcopy)):
             tensor = tensorcopy[i]
-
+            
             #check the delta function
             if (tensor.name == "kdelta"):
                 dontprint.append(i)
@@ -382,7 +382,7 @@ def WriteCode_ccav(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
                             replaceindex(t.tensors[j], tensor.indices[1].name, tensor.indices[0].name)
                 else :
                     ifstatement += tensor.name +" == " +tensor.name + " and"
-
+                    
         outString = ""
         if (len(ifstatement) != 2) :
             outString += ifstatement[:-3]+" : "
@@ -395,7 +395,7 @@ def WriteCode_ccav(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
                         outString += tensor.indices[index].name[-1].capitalize()
                     else :
                         outString += tensor.indices[index].name[0]
-                outString += " ,"
+                outString += " ," 
         outString += indexKey["Va"][-1].capitalize()+indexKey["Vb"][-1].capitalize()+"PQ -> CDRS' "
         for i in range(len(tensorcopy)):
             tensor = tensorcopy[i]
@@ -409,13 +409,13 @@ def WriteCode_caav(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
      for t in result:
         tensorString = ""
         ifstatement = "\tif "
-
+        
         tensorcopy = t.tensors
-        dontprint= []
+        dontprint(= [])
         indexKey = {'Ap': 'Ap', 'Aq' : 'Aq', 'Va' : 'Va'}
         for i in range(len(tensorcopy)):
             tensor = tensorcopy[i]
-
+            
             #check the delta function
             if (tensor.name == "kdelta"):
                 dontprint.append(i)
@@ -433,7 +433,7 @@ def WriteCode_caav(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
 
                 else :
                     ifstatement += tensor.indices[0].name +" == " +tensor.indices[1].name + " and "
-
+  
         #start by printint the if statement
         outString = ""
         if (len(ifstatement) != 4) :
@@ -451,7 +451,7 @@ def WriteCode_caav(result, SupressActive, intmapkey, RDMmapkey, activeInEinsum =
                         outString += tensor.indices[index].name[-1].capitalize()
                     elif len(tensor.indices[index].name) == 1:
                         outString += tensor.indices[index].name[0]
-                outString += " ,"
+                outString += " ," 
         outString += indexKey["Ap"][-1].capitalize()+indexKey["Aq"][-1].capitalize()+indexKey["Va"][-1].capitalize()+" -> RSB' "
 
         for i in range(len(tensorcopy)):

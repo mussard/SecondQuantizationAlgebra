@@ -1,0 +1,8 @@
+ (   2.00000)   kdelta[Ci,Cj] kdelta[Va,Vc] kdelta[Vb,Vd] E1[Ar,Ap] 
+ (  -1.00000)   kdelta[Ci,Cj] kdelta[Va,Vd] kdelta[Vb,Vc] E1[Ar,Ap] 
+
+
+	if Ci == Cj  : 
+		Cout +=  (2.0) *numpy.einsum( ' ,CD -> CD'  , E1[Ar,Ap] ,  Cin)
+	if Ci == Cj  : 
+		Cout +=  (-1.0) *numpy.einsum( ' ,DC -> CD'  , E1[Ar,Ap] ,  Cin)

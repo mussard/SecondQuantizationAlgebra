@@ -270,13 +270,13 @@ def bVec(Class,AllTensors,df=False):
     E2index = AllTensors.index('E2')
     E3index = AllTensors.index('E3')
     bVec_lines=[
-      ["ABCE,ABCD,ED",      2.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E1index), '//  2.0 b[abce] W[abcd] E1[ed]'    ],\
-      ["ACBE,ABCD,ED",     -1.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E1index), '// -1.0 b[acbe] W[abcd] E1[ed]'    ],\
-      ["ABEF,ABCD,CFED",   -1.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// -1.0 b[abef] W[abcd] E2[cfed]'  ],\
-      ["ACEF,ABCD,BFDE",   -1.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// -1.0 b[acef] W[abcd] E2[bfde]'  ],\
-      ["AEBF,ABCD,CFDE",   -1.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// -1.0 b[aebf] W[abcd] E2[cfde]'  ],\
-      ["AECF,ABCD,BFDE",    2.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '//  2.0 b[aecf] W[abcd] E2[bfde]'  ],\
-      ["AEFG,ABCD,BCGDFE", -1.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E3index), '// -1.0 b[aefg] W[abcd] E3[bcgdfe]'],\
+      ["ABCE,ABCD,ED",      2.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E1index), '//  2.0 b[abce] V[abcd] E1[ed]'    ],\
+      ["ACBE,ABCD,ED",     -1.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E1index), '// -1.0 b[acbe] V[abcd] E1[ed]'    ],\
+      ["ABEF,ABCD,CFED",   -1.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// -1.0 b[abef] V[abcd] E2[cfed]'  ],\
+      ["ACEF,ABCD,BFDE",   -1.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// -1.0 b[acef] V[abcd] E2[bfde]'  ],\
+      ["AEBF,ABCD,CFDE",   -1.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// -1.0 b[aebf] V[abcd] E2[cfde]'  ],\
+      ["AECF,ABCD,BFDE",    2.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '//  2.0 b[aecf] V[abcd] E2[bfde]'  ],\
+      ["AEFG,ABCD,BCGDFE", -1.0, 3, '%2i,%2i,%2i'%(bindex, Vindex, E3index), '// -1.0 b[aefg] V[abcd] E3[bcgdfe]'],\
     ]
 
   if (Class=='AAAV'):
@@ -285,27 +285,27 @@ def bVec(Class,AllTensors,df=False):
     E2index = AllTensors.index('E2')
     E3index = AllTensors.index('E3')
     bVec_lines=[
-      ["AUVW,APQR,WR,QP,VU",  1.0, 5, '%2i,%2i,%2i,%2i,%2i'%(bindex, Vindex, E1index, daindex, daindex) , '// 1.0 b[auvw] W[apqr] E1[wr] delta[qp] delta[vu]' ],\
-      ["AUVW,APQR,VWRU,QP",   1.0, 4, '%2i,%2i,%2i,%2i'    %(bindex, Vindex, E2index, daindex)          , '// 1.0 b[auvw] W[apqr] E2[vwru] delta[qp]'         ],\
-      ["AUVW,APQR,VWQR,PU",   1.0, 4, '%2i,%2i,%2i,%2i'    %(bindex, Vindex, E2index, daindex)          , '// 1.0 b[auvw] W[apqr] E2[vwqr] delta[pu]'         ],\
-      ["AUVW,APQR,PWRQ,VU",   1.0, 4, '%2i,%2i,%2i,%2i'    %(bindex, Vindex, E2index, daindex)          , '// 1.0 b[auvw] W[apqr] E2[pwrq] delta[vu]'         ],\
-      ["AUVW,APQR,PVWRQU",    1.0, 3, '%2i,%2i,%2i'        %(bindex, Vindex, E3index)                   , '// 1.0 b[auvw] W[apqr] E3[pvwrqu]'                 ],\
+      ["AUVW,APQR,WR,QP,VU",  1.0, 5, '%2i,%2i,%2i,%2i,%2i'%(bindex, Vindex, E1index, daindex, daindex) , '// 1.0 b[auvw] V[apqr] E1[wr] delta[qp] delta[vu]' ],\
+      ["AUVW,APQR,VWRU,QP",   1.0, 4, '%2i,%2i,%2i,%2i'    %(bindex, Vindex, E2index, daindex)          , '// 1.0 b[auvw] V[apqr] E2[vwru] delta[qp]'         ],\
+      ["AUVW,APQR,VWQR,PU",   1.0, 4, '%2i,%2i,%2i,%2i'    %(bindex, Vindex, E2index, daindex)          , '// 1.0 b[auvw] V[apqr] E2[vwqr] delta[pu]'         ],\
+      ["AUVW,APQR,PWRQ,VU",   1.0, 4, '%2i,%2i,%2i,%2i'    %(bindex, Vindex, E2index, daindex)          , '// 1.0 b[auvw] V[apqr] E2[pwrq] delta[vu]'         ],\
+      ["AUVW,APQR,PVWRQU",    1.0, 3, '%2i,%2i,%2i'        %(bindex, Vindex, E3index)                   , '// 1.0 b[auvw] V[apqr] E3[pvwrqu]'                 ],\
     ]
 
   if (Class=='AAVV'):
     E2index = AllTensors.index('E2')
     bVec_lines=[
-      ["ABRS,ABPQ,RSPQ", 0.25, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// 0.5 b[ABRS] W[ABPQ] E2[RSPQ]'],\
-      ["BARS,ABPQ,RSQP", 0.25, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// 0.5 b[BARS] W[ABPQ] E2[RSQP]'],\
-      ["ABRS,BAPQ,RSQP", 0.25, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// 0.5 b[ABRS] W[BAPQ] E2[RSQP]'],\
-      ["BARS,BAPQ,RSPQ", 0.25, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// 0.5 b[BARS] W[BAPQ] E2[RSPQ]'],\
+      ["ABRS,ABPQ,RSPQ", 0.25, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// 0.5 b[ABRS] V[ABPQ] E2[RSPQ]'],\
+      ["BARS,ABPQ,RSQP", 0.25, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// 0.5 b[BARS] V[ABPQ] E2[RSQP]'],\
+      ["ABRS,BAPQ,RSQP", 0.25, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// 0.5 b[ABRS] V[BAPQ] E2[RSQP]'],\
+      ["BARS,BAPQ,RSPQ", 0.25, 3, '%2i,%2i,%2i'%(bindex, Vindex, E2index), '// 0.5 b[BARS] V[BAPQ] E2[RSPQ]'],\
     ]
 
   if (Class=='ACVV'):
     E1index = AllTensors.index('E1')
     bVec_lines=[
-      ["ABIP,RP,ABIR",  2.0, 3, '%2i,%2i,%2i'%(bindex, E1index, Vindex), '//  2.0 b[ABIP] E1[RP] W[ABIR]'],\
-      ["ABIP,RP,BAIR", -1.0, 3, '%2i,%2i,%2i'%(bindex, E1index, Vindex), '// -1.0 b[ABIP] E1[RP] W[BAIR]'],\
+      ["ABIP,RP,ABIR",  2.0, 3, '%2i,%2i,%2i'%(bindex, E1index, Vindex), '//  2.0 b[ABIP] E1[RP] V[ABIR]'],\
+      ["ABIP,RP,BAIR", -1.0, 3, '%2i,%2i,%2i'%(bindex, E1index, Vindex), '// -1.0 b[ABIP] E1[RP] V[BAIR]'],\
     ]
 
   if (Class=='CAAV'):
@@ -329,20 +329,20 @@ def bVec(Class,AllTensors,df=False):
     E1index = AllTensors.index('E1')
     E2index = AllTensors.index('E2')
     bVec_lines=[
-      ["KLRS,PR,KLPS",    2.0, 3, '%2i,%2i,%2i'%(bindex,daindex,Vindex), '//  2.0 b[KLRS] delta[PR] delta[QS] W[KLPQ]'],\
-      ["KLRS,PS,KLPR",   -1.0, 3, '%2i,%2i,%2i'%(bindex,daindex,Vindex), '// -1.0 b[KLRS] delta[PS] delta[QR] W[KLPQ]'],\
-      ["KLRS,QS,KLRQ",   -1.0, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '// -1.0 b[KLRS] E1[QS]    delta[PR] W[KLPQ]'],\
-      ["KLRS,QR,KLSQ",    0.5, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '//  0.5 b[KLRS] E1[QR]    delta[PS] W[KLPQ]'],\
-      ["KLRS,PS,KLPR",    0.5, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '//  0.5 b[KLRS] E1[PS]    delta[QR] W[KLPQ]'],\
-      ["KLRS,PR,KLPS",   -1.0, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '// -1.0 b[KLRS] E1[PR]    delta[QS] W[KLPQ]'],\
-      ["KLRS,PQRS,KLPQ",  0.5, 3, '%2i,%2i,%2i'%(bindex,E2index,Vindex), '//  0.5 b[KLRS] E2[PQRS]            W[KLPQ]'],\
-      ["KLRS,PS,LKPR",    2.0, 3, '%2i,%2i,%2i'%(bindex,daindex,Vindex), '//  2.0 b[KLRS] delta[PS] delta[QR] W[LKPQ]'],\
-      ["KLRS,PR,LKPS",   -1.0, 3, '%2i,%2i,%2i'%(bindex,daindex,Vindex), '// -1.0 b[KLRS] delta[PR] delta[QS] W[LKPQ]'],\
-      ["KLRS,QR,LKSQ",   -1.0, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '// -1.0 b[KLRS] E1[QR]    delta[PS] W[LKPQ]'],\
-      ["KLRS,QS,LKRQ",    0.5, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '//  0.5 b[KLRS] E1[QS]    delta[PR] W[LKPQ]'],\
-      ["KLRS,PR,LKPS",    0.5, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '//  0.5 b[KLRS] E1[PR]    delta[QS] W[LKPQ]'],\
-      ["KLRS,PS,LKPR",   -1.0, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '// -1.0 b[KLRS] E1[PS]    delta[QR] W[LKPQ]'],\
-      ["KLRS,PQSR,LKPQ",  0.5, 3, '%2i,%2i,%2i'%(bindex,E2index,Vindex), '//  0.5 b[KLRS] E2[PQSR]            W[LKPQ]'],\
+      ["KLRS,PR,KLPS",    2.0, 3, '%2i,%2i,%2i'%(bindex,daindex,Vindex), '//  2.0 b[KLRS] delta[PR] delta[QS] V[KLPQ]'],\
+      ["KLRS,PS,KLPR",   -1.0, 3, '%2i,%2i,%2i'%(bindex,daindex,Vindex), '// -1.0 b[KLRS] delta[PS] delta[QR] V[KLPQ]'],\
+      ["KLRS,QS,KLRQ",   -1.0, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '// -1.0 b[KLRS] E1[QS]    delta[PR] V[KLPQ]'],\
+      ["KLRS,QR,KLSQ",    0.5, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '//  0.5 b[KLRS] E1[QR]    delta[PS] V[KLPQ]'],\
+      ["KLRS,PS,KLPR",    0.5, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '//  0.5 b[KLRS] E1[PS]    delta[QR] V[KLPQ]'],\
+      ["KLRS,PR,KLPS",   -1.0, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '// -1.0 b[KLRS] E1[PR]    delta[QS] V[KLPQ]'],\
+      ["KLRS,PQRS,KLPQ",  0.5, 3, '%2i,%2i,%2i'%(bindex,E2index,Vindex), '//  0.5 b[KLRS] E2[PQRS]            V[KLPQ]'],\
+      ["KLRS,PS,LKPR",    2.0, 3, '%2i,%2i,%2i'%(bindex,daindex,Vindex), '//  2.0 b[KLRS] delta[PS] delta[QR] V[LKPQ]'],\
+      ["KLRS,PR,LKPS",   -1.0, 3, '%2i,%2i,%2i'%(bindex,daindex,Vindex), '// -1.0 b[KLRS] delta[PR] delta[QS] V[LKPQ]'],\
+      ["KLRS,QR,LKSQ",   -1.0, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '// -1.0 b[KLRS] E1[QR]    delta[PS] V[LKPQ]'],\
+      ["KLRS,QS,LKRQ",    0.5, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '//  0.5 b[KLRS] E1[QS]    delta[PR] V[LKPQ]'],\
+      ["KLRS,PR,LKPS",    0.5, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '//  0.5 b[KLRS] E1[PR]    delta[QS] V[LKPQ]'],\
+      ["KLRS,PS,LKPR",   -1.0, 3, '%2i,%2i,%2i'%(bindex,E1index,Vindex), '// -1.0 b[KLRS] E1[PS]    delta[QR] V[LKPQ]'],\
+      ["KLRS,PQSR,LKPQ",  0.5, 3, '%2i,%2i,%2i'%(bindex,E2index,Vindex), '//  0.5 b[KLRS] E2[PQSR]            V[LKPQ]'],\
      #'  FEqInfo MakeS1[0] = {',\
      #'        //  {"PQRS,PR,QS",     4.0  , 3, {%i,%i,%i}}, //S1[PQRS] +=  4.0 delta[PR] delta[QS]' %(S1index,daindex,daindex),\
      #'        //  {"PQRS,PS,QR",    -2.0  , 3, {%i,%i,%i}}, //S1[PQRS] += -2.0 delta[PS] delta[QR]' %(S1index,daindex,daindex),\
@@ -366,19 +366,19 @@ def bVec(Class,AllTensors,df=False):
     E1index = AllTensors.index('E1')
     Dindex  = AllTensors.index('deltaa')
     bVec_lines=[
-      ["IJPA,RP,IJRA",  4.0, 3, '%2i,%2i,%2i'%(bindex, Dindex, Vindex), '//  4.0 b[IJPA] delta[RP] W[IJRA]'],\
-      ["IJPA,RP,IJRA", -2.0, 3, '%2i,%2i,%2i'%(bindex, E1index,Vindex), '// -2.0 b[IJPA] E1[RP]    W[IJRA]'],\
-      ["IJPA,RP,JIRA", -2.0, 3, '%2i,%2i,%2i'%(bindex, Dindex, Vindex), '// -2.0 b[IJPA] delta[RP] W[JIRA]'],\
-      ["IJPA,RP,JIRA",  1.0, 3, '%2i,%2i,%2i'%(bindex, E1index,Vindex), '//  1.0 b[IJPA] E1[RP]    W[JIRA]'],\
+      ["IJPA,RP,IJRA",  4.0, 3, '%2i,%2i,%2i'%(bindex, Dindex, Vindex), '//  4.0 b[IJPA] delta[RP] V[IJRA]'],\
+      ["IJPA,RP,IJRA", -2.0, 3, '%2i,%2i,%2i'%(bindex, E1index,Vindex), '// -2.0 b[IJPA] E1[RP]    V[IJRA]'],\
+      ["IJPA,RP,JIRA", -2.0, 3, '%2i,%2i,%2i'%(bindex, Dindex, Vindex), '// -2.0 b[IJPA] delta[RP] V[JIRA]'],\
+      ["IJPA,RP,JIRA",  1.0, 3, '%2i,%2i,%2i'%(bindex, E1index,Vindex), '//  1.0 b[IJPA] E1[RP]    V[JIRA]'],\
     ]
 
   if (Class=='CCVV'):
     dcindex = AllTensors.index('deltac')
     bVec_lines=[
-      ["CDKL,LM,CDKM",  2.0, 3, '%2i,%2i,%2i'%(bindex, dcindex, Vindex), '//  2.0 b[CDKL] deltac[LM] W[CDKM]'],\
-      ["CDKL,LM,DCKM", -1.0, 3, '%2i,%2i,%2i'%(bindex, dcindex, Vindex), '// -1.0 b[CDKL] deltac[LM] W[DCKM]'],\
-      ["CDKL,LM,CDMK", -1.0, 3, '%2i,%2i,%2i'%(bindex, dcindex, Vindex), '// -1.0 b[CDKL] deltac[LM] W[CDMK]'],\
-      ["CDKL,LM,DCMK",  2.0, 3, '%2i,%2i,%2i'%(bindex, dcindex, Vindex), '//  2.0 b[CDKL] deltac[LM] W[DCMK]'],\
+      ["CDKL,LM,CDKM",  2.0, 3, '%2i,%2i,%2i'%(bindex, dcindex, Vindex), '//  2.0 b[CDKL] deltac[LM] V[CDKM]'],\
+      ["CDKL,LM,DCKM", -1.0, 3, '%2i,%2i,%2i'%(bindex, dcindex, Vindex), '// -1.0 b[CDKL] deltac[LM] V[DCKM]'],\
+      ["CDKL,LM,CDMK", -1.0, 3, '%2i,%2i,%2i'%(bindex, dcindex, Vindex), '// -1.0 b[CDKL] deltac[LM] V[CDMK]'],\
+      ["CDKL,LM,DCMK",  2.0, 3, '%2i,%2i,%2i'%(bindex, dcindex, Vindex), '//  2.0 b[CDKL] deltac[LM] V[DCMK]'],\
     ]
 
 
