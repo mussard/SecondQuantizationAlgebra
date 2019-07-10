@@ -226,6 +226,7 @@ def decomp_4rdms_to_3rdms_sf(inTerms, d4name, d1, d2, d2_hom, d2_het, d3):
         inTerms[-1] = multiplyTerms(inTerms[-1], post_term)
       del(inTerms[i])
 
+    if opCount!=0: break
   if options.verbose:
     print 'decomposed %i 4-body RDMs' %(opCount)
 
@@ -429,21 +430,16 @@ def decomp_4rdm_to_2rdm_sf(d4, d1, d2, d2_hom, d2_het):
             d2_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + bj[2:4])]
             decomp.append(term(coeff, [], [d2_copy_0, d2_copy_1]))
           elif n_perm == 2:
-            coeff = sign * 1.0/3.0
+            coeff = sign * 0.5
             d2_hom_copy_0 = d2_hom.copy()
-            d2_hom_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[0], bj[1]])]
+            d2_hom_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + bj[0:2])]
             d2_hom_copy_1 = d2_hom.copy()
-            d2_hom_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + [bj[3], bj[2]])]
-            decomp.append(term(coeff/2.0, [], [d2_hom_copy_0, d2_hom_copy_1]))
-            d2_hom_copy_0 = d2_hom.copy()
-            d2_hom_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[1], bj[0]])]
-            d2_hom_copy_1 = d2_hom.copy()
-            d2_hom_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + [bj[2], bj[3]])]
-            decomp.append(term(coeff/2.0, [], [d2_hom_copy_0, d2_hom_copy_1]))
+            d2_hom_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + bj[2:4])]
+            decomp.append(term(coeff, [], [d2_hom_copy_0, d2_hom_copy_1]))
             d2_het_copy_0 = d2_het.copy()
-            d2_het_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[0], bj[1]])]
+            d2_het_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + bj[0:2])]
             d2_het_copy_1 = d2_het.copy()
-            d2_het_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + [bj[2], bj[3]])]
+            d2_het_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + bj[2:4])]
             decomp.append(term(coeff, [], [d2_het_copy_0, d2_het_copy_1]))
             d2_het_copy_0 = d2_het.copy()
             d2_het_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[1], bj[0]])]
@@ -774,21 +770,16 @@ def decomp_4rdm_to_3rdm_sf(d4, d1, d2, d2_hom, d2_het, d3):
             d2_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + bj[2:4])]
             decomp.append(term(coeff, [], [d2_copy_0, d2_copy_1]))
           elif n_perm == 2:
-            coeff = sign * 1.0/3.0
+            coeff = sign * 0.5
             d2_hom_copy_0 = d2_hom.copy()
-            d2_hom_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[0], bj[1]])]
+            d2_hom_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + bj[0:2])]
             d2_hom_copy_1 = d2_hom.copy()
-            d2_hom_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + [bj[3], bj[2]])]
-            decomp.append(term(coeff/2.0, [], [d2_hom_copy_0, d2_hom_copy_1]))
-            d2_hom_copy_0 = d2_hom.copy()
-            d2_hom_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[1], bj[0]])]
-            d2_hom_copy_1 = d2_hom.copy()
-            d2_hom_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + [bj[2], bj[3]])]
-            decomp.append(term(coeff/2.0, [], [d2_hom_copy_0, d2_hom_copy_1]))
+            d2_hom_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + bj[2:4])]
+            decomp.append(term(coeff, [], [d2_hom_copy_0, d2_hom_copy_1]))
             d2_het_copy_0 = d2_het.copy()
-            d2_het_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[0], bj[1]])]
+            d2_het_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + bj[0:2])]
             d2_het_copy_1 = d2_het.copy()
-            d2_het_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + [bj[2], bj[3]])]
+            d2_het_copy_1.indices = [d4.indices[i] for i in (ti[2:4] + bj[2:4])]
             decomp.append(term(coeff, [], [d2_het_copy_0, d2_het_copy_1]))
             d2_het_copy_0 = d2_het.copy()
             d2_het_copy_0.indices = [d4.indices[i] for i in (ti[0:2] + [bj[1], bj[0]])]
